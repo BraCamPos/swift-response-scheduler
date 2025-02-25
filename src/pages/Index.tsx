@@ -5,7 +5,7 @@ import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
-import { PlanePaper, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
@@ -16,7 +16,7 @@ const Index = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="inline-block animate-fade-in">
-            <PlanePaper className="h-16 w-16 text-secondary mx-auto mb-6" />
+            <ArrowRight className="h-16 w-16 text-secondary mx-auto mb-6" />
           </div>
           <h1 className="text-4xl md:text-6xl font-playfair font-semibold mb-6 animate-fade-up">
             Never Miss a Client Again
