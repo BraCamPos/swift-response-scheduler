@@ -5,7 +5,7 @@ import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
-import { ArrowRight, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 const Index = () => {
   return (
@@ -24,12 +24,8 @@ const Index = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "100ms" }}>
             Automate your real estate communications with instant responses, smart workflows, and guaranteed five-star reviews.
           </p>
-          <div className="space-x-4 animate-fade-up" style={{ animationDelay: "200ms" }}>
+          <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline">
               Book a Demo
             </Button>
           </div>

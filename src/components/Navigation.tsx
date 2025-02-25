@@ -42,7 +42,7 @@ export const Navigation = () => {
               Login
             </Button>
             <Button variant="default" className="bg-secondary hover:bg-secondary/90">
-              Book a Call
+              Book a Demo
             </Button>
           </div>
         </div>
