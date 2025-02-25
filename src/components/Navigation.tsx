@@ -38,9 +38,11 @@ export const Navigation = () => {
             <a href="#testimonials" className="text-sm font-medium hover:text-secondary transition-colors">
               Testimonials
             </a>
-            <Button variant="outline" className="hover:text-secondary">
-              Login
-            </Button>
+            <a href="https://app.agentswiftly.com.au" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="hover:text-secondary">
+                Login
+              </Button>
+            </a>
             <Button variant="default" className="bg-secondary hover:bg-secondary/90">
               Book a Demo
             </Button>
