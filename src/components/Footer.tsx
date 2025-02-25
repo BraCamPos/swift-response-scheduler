@@ -43,7 +43,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>San Francisco, CA</span>
+                <span>700 Swanston St, Carlton VIC 3053</span>
               </li>
             </ul>
           </div>
