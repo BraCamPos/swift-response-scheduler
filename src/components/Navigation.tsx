@@ -38,6 +38,9 @@ export const Navigation = () => {
             <a href="#testimonials" className="text-sm font-medium hover:text-secondary transition-colors">
               Testimonials
             </a>
+            <Button variant="outline" className="hover:text-secondary">
+              Login
+            </Button>
             <Button variant="default" className="bg-secondary hover:bg-secondary/90">
               Book a Call
             </Button>
