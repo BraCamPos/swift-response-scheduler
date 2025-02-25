@@ -6,8 +6,8 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Swiftly",
-      price: "$49",
-      period: "/month",
+      price: "$127",
+      period: "/agent/month",
       features: [
         "Automated SMS responses",
         "Basic workflow automation",
@@ -17,15 +17,14 @@ export const Pricing = () => {
     },
     {
       name: "Swiftly Plus",
-      price: "$99",
-      period: "/month",
+      price: "$187",
+      period: "/agent/month",
       features: [
         "Everything in Swiftly",
         "Advanced workflow automation",
         "Priority support",
         "Unlimited review requests",
         "Custom branding",
-        "Analytics dashboard",
       ],
     },
   ];
