@@ -32,6 +32,10 @@ const Index = () => {
         </div>
       </section>
 
+      <Features />
+      <HowItWorks />
+      <Pricing />
+
       {/* About Us Section */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -52,10 +56,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <Features />
-      <HowItWorks />
-      <Pricing />
+      
       <Footer />
     </div>
   );
