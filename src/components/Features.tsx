@@ -10,7 +10,7 @@ export const Features = () => {
     },
     {
       icon: Settings,
-      title: "Intelligent Insights",
+      title: "One Step Ahead",
       description: "Gain valuable context from automated interactions to enhance your initial client conversations with meaningful background information.",
     },
     {
