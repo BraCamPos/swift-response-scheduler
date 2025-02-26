@@ -1,5 +1,5 @@
 
-import { MessageSquare, CalendarCheck, Star, Settings } from "lucide-react";
+import { MessageSquare, CalendarCheck, Star, Settings, Code } from "lucide-react";
 
 export const Features = () => {
   const features = [
@@ -23,6 +23,11 @@ export const Features = () => {
       title: "Review Management",
       description: "Build your reputation with our guaranteed five-star review system.",
     },
+    {
+      icon: Code,
+      title: "Custom Automation Rules",
+      description: "Fine-tune your automated responses and workflows to maintain your authentic voice while maximizing engagement efficiency.",
+    },
   ];
 
   return (
@@ -31,7 +36,7 @@ export const Features = () => {
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
           Streamline Your Real Estate Communications
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
