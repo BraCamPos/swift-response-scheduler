@@ -29,6 +29,9 @@ export const Navigation = () => {
             <span className="font-playfair text-xl font-semibold">Agent Swiftly</span>
           </a>
           <div className="hidden md:flex items-center space-x-8">
+            <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">
+              About Us
+            </a>
             <a href="#how-it-works" className="text-sm font-medium hover:text-secondary transition-colors">
               How It Works
             </a>
