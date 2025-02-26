@@ -5,7 +5,7 @@ export const Features = () => {
   const features = [
     {
       icon: MessageSquare,
-      title: "Automated SMS Responses",
+      title: "Instant SMS Responses",
       description: "Never miss an opportunity with instant SMS replies when you're unavailable, tailored to sound just like you.",
     },
     {
