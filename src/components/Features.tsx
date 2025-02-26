@@ -21,7 +21,7 @@ export const Features = () => {
     {
       icon: Star,
       title: "Review Management",
-      description: "Build your reputation with our guaranteed five-star review system.",
+      description: "Build your reputation with our guaranteed five-star reviews from genuine clients.",
     },
   ];
 
