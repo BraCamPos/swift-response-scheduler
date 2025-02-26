@@ -22,7 +22,7 @@ const Index = () => {
             Never Miss a Client Again
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "100ms" }}>
-            Respond to calls you can't take and gain key insights through authentic automated conversations.
+            Instantly respond to calls you can't take and gain key insights through authentic automated conversations.
           </p>
           <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90">
