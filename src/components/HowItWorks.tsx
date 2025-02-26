@@ -36,30 +36,51 @@ export const HowItWorks = () => {
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-16">
           How it Works
         </h2>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative flex items-start gap-6 mb-16 last:mb-0 animate-fade-up"
+              className="relative mb-20 last:mb-0 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Dashed line connector */}
-              {index < steps.length - 1 && (
-                <div className="absolute left-5 top-14 w-0.5 h-24 border-l-2 border-dashed border-secondary/30" />
-              )}
-              
-              {/* Icon */}
-              <div className="relative z-10 bg-white">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary/10">
-                  <step.icon className="w-5 h-5 text-secondary" />
+              {/* Content container with alternating layout */}
+              <div className={`flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                {/* Content box */}
+                <div className="w-[45%]">
+                  <div className="flex items-start gap-4">
+                    <div className="relative z-10 bg-white">
+                      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary/10">
+                        <step.icon className="w-5 h-5 text-secondary" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                      <p className="text-gray-600">{step.description}</p>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Spacer for line */}
+                <div className="w-[10%]" />
+
+                {/* Empty div for alignment */}
+                <div className="w-[45%]" />
               </div>
-              
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </div>
+
+              {/* Connecting lines */}
+              {index < steps.length - 1 && (
+                <div className="absolute z-0" style={{
+                  left: index % 2 === 0 ? '45%' : '45%',
+                  top: '2rem',
+                  width: '10%',
+                  height: '100px'
+                }}>
+                  {/* Horizontal line */}
+                  <div className="absolute top-4 border-t-2 border-dashed border-secondary/30 w-full" />
+                  {/* Vertical line */}
+                  <div className="absolute left-1/2 top-4 border-l-2 border-dashed border-secondary/30 h-full" />
+                </div>
+              )}
             </div>
           ))}
         </div>
