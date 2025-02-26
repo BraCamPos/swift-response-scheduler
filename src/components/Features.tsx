@@ -34,7 +34,7 @@ export const Features = () => {
     <section id="features" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
-          Streamline Your Real Estate Communications
+          Automated exchanges To Put You Ahead
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {features.map((feature, index) => (
