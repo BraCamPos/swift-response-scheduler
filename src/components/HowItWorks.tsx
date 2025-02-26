@@ -73,12 +73,35 @@ export const HowItWorks = () => {
                   left: index % 2 === 0 ? '45%' : '45%',
                   top: '2rem',
                   width: '10%',
-                  height: '100px'
+                  height: '120px'
                 }}>
                   {/* Horizontal line */}
-                  <div className="absolute top-4 border-t-2 border-dashed border-secondary/30 w-full" />
+                  <div 
+                    className="absolute top-4 border-t-2 border-dashed border-secondary/30" 
+                    style={{
+                      width: '100%',
+                      left: index % 2 === 0 ? '0' : '0',
+                      transform: index % 2 === 0 ? 'translateX(0)' : 'translateX(-100%)'
+                    }}
+                  />
                   {/* Vertical line */}
-                  <div className="absolute left-1/2 top-4 border-l-2 border-dashed border-secondary/30 h-full" />
+                  <div 
+                    className="absolute border-l-2 border-dashed border-secondary/30"
+                    style={{
+                      height: '100%',
+                      left: index % 2 === 0 ? '100%' : '0',
+                      top: '1rem'
+                    }}
+                  />
+                  {/* Second horizontal line */}
+                  <div 
+                    className="absolute border-t-2 border-dashed border-secondary/30"
+                    style={{
+                      width: '900%',
+                      top: '120px',
+                      left: index % 2 === 0 ? '100%' : '-800%'
+                    }}
+                  />
                 </div>
               )}
             </div>
