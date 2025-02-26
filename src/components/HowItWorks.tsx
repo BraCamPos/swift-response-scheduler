@@ -75,31 +75,31 @@ export const HowItWorks = () => {
                   width: '10%',
                   height: '120px'
                 }}>
-                  {/* Horizontal line */}
-                  <div 
-                    className="absolute top-4 border-t-2 border-dashed border-secondary/30" 
-                    style={{
-                      width: '100%',
-                      left: index % 2 === 0 ? '0' : '0',
-                      transform: index % 2 === 0 ? 'translateX(0)' : 'translateX(-100%)'
-                    }}
-                  />
-                  {/* Vertical line */}
+                  {/* Vertical line from current paragraph */}
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      height: '100%',
-                      left: index % 2 === 0 ? '100%' : '0',
-                      top: '1rem'
+                      height: '40px',
+                      left: index % 2 === 0 ? '0' : '100%',
+                      top: '0'
                     }}
                   />
-                  {/* Second horizontal line */}
+                  {/* Horizontal line */}
                   <div 
                     className="absolute border-t-2 border-dashed border-secondary/30"
                     style={{
                       width: '900%',
-                      top: '120px',
-                      left: index % 2 === 0 ? '100%' : '-800%'
+                      top: '40px',
+                      left: index % 2 === 0 ? '0' : '-800%'
+                    }}
+                  />
+                  {/* Vertical line to next paragraph */}
+                  <div 
+                    className="absolute border-l-2 border-dashed border-secondary/30"
+                    style={{
+                      height: '40px',
+                      left: index % 2 === 0 ? '900%' : '0',
+                      top: '40px'
                     }}
                   />
                 </div>
