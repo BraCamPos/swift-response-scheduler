@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
-import { Testimonials } from "@/components/Testimonials";
+import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
 import { Send } from "lucide-react";
 
@@ -33,8 +33,8 @@ const Index = () => {
       </section>
 
       <Features />
+      <HowItWorks />
       <Pricing />
-      <Testimonials />
       <Footer />
     </div>
   );
