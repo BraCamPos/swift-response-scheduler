@@ -1,5 +1,5 @@
 
-import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Plane } from "lucide-react";
+import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send } from "lucide-react";
 
 export const HowItWorks = () => {
   const steps = [
@@ -93,7 +93,7 @@ export const HowItWorks = () => {
                       left: index % 2 === 0 ? '0' : '-800%'
                     }}
                   />
-                  {/* Plane icon */}
+                  {/* Send icon */}
                   <div 
                     className="absolute z-10 bg-white p-1"
                     style={{
@@ -102,7 +102,7 @@ export const HowItWorks = () => {
                       transform: index % 2 === 0 ? 'rotate(0deg)' : 'rotate(180deg)'
                     }}
                   >
-                    <Plane className="w-4 h-4 text-secondary" />
+                    <Send className="w-4 h-4 text-secondary" />
                   </div>
                   {/* Vertical line to next paragraph */}
                   <div 
