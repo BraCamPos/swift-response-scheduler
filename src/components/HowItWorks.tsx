@@ -99,10 +99,10 @@ export const HowItWorks = () => {
                     style={{
                       left: index % 2 === 0 ? '450%' : '-350%',
                       top: '32px',
-                      transform: index % 2 === 0 ? 'rotate(0deg)' : 'rotate(180deg)'
+                      transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)`
                     }}
                   >
-                    <Send className="w-4 h-4 text-secondary" />
+                    <Send className="w-6 h-6 text-secondary" />
                   </div>
                   {/* Vertical line to next paragraph */}
                   <div 
