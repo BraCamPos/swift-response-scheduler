@@ -29,7 +29,7 @@ export const Features = () => {
     <section id="features" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
-          Automated Exchanges To Put You Ahead
+          Stay One Step Ahead With Automated Exchanges
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
