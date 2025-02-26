@@ -10,8 +10,8 @@ export const Features = () => {
     },
     {
       icon: Settings,
-      title: "Smart Workflows",
-      description: "Create automated workflows that adapt based on client responses and history.",
+      title: "Intelligent Insights",
+      description: "Gain valuable context from automated interactions to enhance your initial client conversations with meaningful background information.",
     },
     {
       icon: CalendarCheck,
