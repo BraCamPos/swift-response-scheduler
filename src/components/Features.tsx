@@ -15,7 +15,7 @@ export const Features = () => {
     },
     {
       icon: CalendarCheck,
-      title: "Easy Scheduling",
+      title: "Schedule On The Go",
       description: "Send scheduling links automatically to streamline appointment booking.",
     },
     {
