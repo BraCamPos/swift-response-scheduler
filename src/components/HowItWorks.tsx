@@ -40,7 +40,7 @@ export const HowItWorks = () => {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative mb-20 last:mb-0 animate-fade-up"
+              className="relative mb-32 last:mb-0 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -68,15 +68,15 @@ export const HowItWorks = () => {
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '160px'
+                  height: '200px'
                 }}>
                   {/* Vertical line down from current paragraph */}
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      height: '50px',
+                      height: '60px',
                       left: index % 2 === 0 ? '22.5%' : '77.5%',
-                      top: '70px'
+                      top: '100px'
                     }}
                   />
                   {/* Horizontal line */}
@@ -84,7 +84,7 @@ export const HowItWorks = () => {
                     className="absolute border-t-2 border-dashed border-secondary/30"
                     style={{
                       width: '55%',
-                      top: '120px',
+                      top: '160px',
                       left: index % 2 === 0 ? '22.5%' : '22.5%'
                     }}
                   />
@@ -93,7 +93,7 @@ export const HowItWorks = () => {
                     className="absolute z-10 bg-white p-1"
                     style={{
                       left: '48%',
-                      top: '112px',
+                      top: '152px',
                       transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)`
                     }}
                   >
@@ -105,7 +105,7 @@ export const HowItWorks = () => {
                     style={{
                       height: '40px',
                       left: index % 2 === 0 ? '77.5%' : '22.5%',
-                      top: '120px'
+                      top: '160px'
                     }}
                   />
                 </div>
