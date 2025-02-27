@@ -56,8 +56,12 @@ const Index = () => {
             About Us
           </h2>
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-8">
-              {/* Placeholder for profile image */}
+            <div className="w-64 h-80 mx-auto mb-8 rounded-2xl overflow-hidden">
+              <img 
+                src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
+                alt="Professional profile photo in black and white"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="text-2xl font-semibold mb-4">Bradley Camgoz Posselt</h3>
             <p className="text-gray-600 mb-6">
