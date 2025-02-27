@@ -30,7 +30,7 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20">
+    <section id="pricing" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
           Simple, Transparent Pricing
