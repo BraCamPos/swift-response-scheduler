@@ -26,7 +26,7 @@ export const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-gray-50">
+    <section id="features" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
           Stay One Step Ahead With Automated Exchanges
