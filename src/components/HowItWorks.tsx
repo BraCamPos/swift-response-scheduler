@@ -66,34 +66,34 @@ export const HowItWorks = () => {
               {index < steps.length - 1 && (
                 <div className="absolute z-0" style={{
                   left: '0',
-                  top: '2rem',
+                  top: '0',
                   width: '100%',
-                  height: '120px'
+                  height: '140px'
                 }}>
                   {/* Vertical line down from current paragraph */}
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      height: '40px',
-                      left: index % 2 === 0 ? '45%' : '55%',
-                      top: '0'
+                      height: '50px',
+                      left: index % 2 === 0 ? '22.5%' : '77.5%',
+                      top: '40px'
                     }}
                   />
                   {/* Horizontal line */}
                   <div 
                     className="absolute border-t-2 border-dashed border-secondary/30"
                     style={{
-                      width: '10%',
-                      top: '40px',
-                      left: index % 2 === 0 ? '45%' : '45%'
+                      width: '55%',
+                      top: '90px',
+                      left: index % 2 === 0 ? '22.5%' : '22.5%'
                     }}
                   />
                   {/* Send icon */}
                   <div 
                     className="absolute z-10 bg-white p-1"
                     style={{
-                      left: '48.5%',
-                      top: '32px',
+                      left: '48%',
+                      top: '82px',
                       transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)`
                     }}
                   >
@@ -103,9 +103,9 @@ export const HowItWorks = () => {
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      height: '40px',
-                      left: index % 2 === 0 ? '55%' : '45%',
-                      top: '40px'
+                      height: '50px',
+                      left: index % 2 === 0 ? '77.5%' : '22.5%',
+                      top: '90px'
                     }}
                   />
                 </div>
