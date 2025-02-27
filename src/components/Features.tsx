@@ -40,7 +40,7 @@ export const Features = () => {
             >
               <feature.icon className="h-10 w-10 text-secondary mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-700">{feature.description}</p>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>
