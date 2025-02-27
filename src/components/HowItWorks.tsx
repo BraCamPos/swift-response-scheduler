@@ -68,7 +68,7 @@ export const HowItWorks = () => {
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '140px'
+                  height: '160px'
                 }}>
                   {/* Vertical line down from current paragraph */}
                   <div 
@@ -76,7 +76,7 @@ export const HowItWorks = () => {
                     style={{
                       height: '50px',
                       left: index % 2 === 0 ? '22.5%' : '77.5%',
-                      top: '40px'
+                      top: '70px'
                     }}
                   />
                   {/* Horizontal line */}
@@ -84,7 +84,7 @@ export const HowItWorks = () => {
                     className="absolute border-t-2 border-dashed border-secondary/30"
                     style={{
                       width: '55%',
-                      top: '90px',
+                      top: '120px',
                       left: index % 2 === 0 ? '22.5%' : '22.5%'
                     }}
                   />
@@ -93,7 +93,7 @@ export const HowItWorks = () => {
                     className="absolute z-10 bg-white p-1"
                     style={{
                       left: '48%',
-                      top: '82px',
+                      top: '112px',
                       transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)`
                     }}
                   >
@@ -103,9 +103,9 @@ export const HowItWorks = () => {
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      height: '50px',
+                      height: '40px',
                       left: index % 2 === 0 ? '77.5%' : '22.5%',
-                      top: '90px'
+                      top: '120px'
                     }}
                   />
                 </div>
