@@ -33,10 +33,10 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:block animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gray-100">
+              <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Real estate agent on phone" 
+                  src="/lovable-uploads/9e49fe0a-69b6-4e9f-8918-223404f9884f.png" 
+                  alt="Professional real estate agent in a grey suit talking on phone while holding a folder" 
                   className="w-full h-full object-cover"
                 />
               </div>
