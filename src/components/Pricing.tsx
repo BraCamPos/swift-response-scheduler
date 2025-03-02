@@ -9,10 +9,13 @@ export const Pricing = () => {
       price: "$127",
       period: "/agent/month",
       features: [
-        "Automated SMS responses",
-        "Basic workflow automation",
-        "Scheduling integration",
-        "5 review requests per month",
+        "Automated missed call responses",
+        "Automated text exchanges",
+        "Customised SMS wording at setup",
+        "Three text updates per month",
+        "Integrated scheduling with your calendar",
+        "Qualified review request workflow",
+        "All communication logged in app",
       ],
     },
     {
