@@ -1,3 +1,4 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -5,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // vite.config.js
 export default defineConfig(({ mode }) => ({
-  base: "/swift-response-scheduler/", // Ensure this is correct for your deployment
+  base: "/", // Changed from "/swift-response-scheduler/" to "/" for custom domain
   server: {
     host: "::", // If you want to allow other devices on your network, leave it as is
     port: 8080,
