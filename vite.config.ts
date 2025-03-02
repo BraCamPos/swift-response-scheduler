@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // vite.config.js
 export default defineConfig(({ mode }) => ({
-  base: "/", // Changed from "/swift-response-scheduler/" to "/" for custom domain
+  base: "swift-response-scheduler.lovable.app", // Changed from "/swift-response-scheduler/" to "/" for custom domain
   server: {
     host: "::", // If you want to allow other devices on your network, leave it as is
     port: 8080,
