@@ -59,23 +59,24 @@ const Index = () => {
             About Us
           </h2>
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-              <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden shadow-md">
-                <img 
-                  src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
-                  alt="Professional profile photo in black and white"
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                  decoding="async"
-                />
+            <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="md:w-2/5">
+                <div className="w-40 h-40 mx-auto rounded-full overflow-hidden shadow-md">
+                  <img 
+                    src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
+                    alt="Professional profile photo in black and white"
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-semibold mb-4 md:text-left">Bradley Camgoz Posselt</h3>
-                <p className="text-gray-600 mb-6 md:text-left">
-                  As a passionate innovator in real estate technology, Bradley Camgoz Posselt founded My Agent Swiftly with a vision to revolutionize how real estate agents communicate with their clients. With years of experience in both real estate and technology sectors, Bradley recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
+              <div className="md:w-3/5">
+                <p className="text-gray-600 mb-6 text-center md:text-left">
+                  As a passionate innovator in real estate technology, My Agent Swiftly was founded with a vision to revolutionize how real estate agents communicate with their clients. With years of experience in both real estate and technology sectors, we recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
                 </p>
-                <p className="text-gray-600 md:text-left">
-                  Under his leadership, My Agent Swiftly has grown to become a trusted partner for real estate professionals across Australia, helping them leverage cutting-edge AI technology to provide exceptional service while maintaining the personal touch that is so crucial in the real estate industry.
+                <p className="text-gray-600 text-center md:text-left">
+                  My Agent Swiftly has grown to become a trusted partner for real estate professionals across Australia, helping them leverage cutting-edge AI technology to provide exceptional service while maintaining the personal touch that is so crucial in the real estate industry.
                 </p>
               </div>
             </div>
