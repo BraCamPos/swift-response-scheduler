@@ -1,3 +1,4 @@
+
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -58,7 +59,7 @@ export const Pricing = () => {
                 </ul>
               </div>
               <div className="mt-auto">
-                <p className="text-sm text-gray-500 italic mb-4">*min. three months</p>
+                <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
                 <Button className="w-full bg-secondary hover:bg-secondary/90">
                   Get Started
                 </Button>
