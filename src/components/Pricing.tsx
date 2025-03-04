@@ -6,7 +6,7 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Swiftly",
-      price: "$127*",
+      price: "$127",
       period: "/agent/month",
       features: [
         "Automated missed call responses",
@@ -20,7 +20,7 @@ export const Pricing = () => {
     },
     {
       name: "Swiftly Plus",
-      price: "$187*",
+      price: "$187",
       period: "/agent/month",
       features: [
         "Everything in Swiftly",
@@ -47,7 +47,7 @@ export const Pricing = () => {
             >
               <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
               <div className="flex items-baseline mb-6">
-                <span className="text-4xl font-bold">{plan.price}</span>
+                <span className="text-4xl font-bold">{plan.price}<sup>*</sup></span>
                 <span className="text-gray-600 ml-1">{plan.period}</span>
               </div>
               <ul className="space-y-4 mb-8">
