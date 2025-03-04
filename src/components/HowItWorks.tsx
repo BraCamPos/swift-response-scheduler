@@ -30,38 +30,6 @@ export const HowItWorks = () => {
     }
   ];
 
-  // Array of different path patterns for each step
-  const flightPaths = [
-    // First path (0 to 1)
-    `M 225 130 
-     C 325 40, 400 160, 475 80 
-     C 525 20, 550 120, 600 100 
-     C 650 80, 700 180, 775 240`,
-    // Second path (1 to 2)
-    `M 775 130 
-     C 675 50, 625 200, 550 150 
-     C 475 100, 425 180, 350 120 
-     C 275 60, 250 160, 225 240`,
-    // Third path (2 to 3)
-    `M 225 130 
-     C 300 80, 350 220, 450 140 
-     C 550 60, 600 180, 650 120 
-     C 700 60, 750 180, 775 240`,
-    // Fourth path (3 to 4)
-    `M 775 130 
-     C 700 70, 650 200, 550 130 
-     C 450 60, 400 200, 300 130 
-     C 250 90, 225 170, 225 240`
-  ];
-
-  // Array of different airplane positions for each path
-  const planePositions = [
-    { x: 480, y: 100, rotate: 45 },
-    { x: 525, y: 150, rotate: 225 },
-    { x: 450, y: 140, rotate: 45 },
-    { x: 400, y: 120, rotate: 225 }
-  ];
-
   return (
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -102,38 +70,44 @@ export const HowItWorks = () => {
                   width: '100%',
                   height: '240px'
                 }}>
-                  {/* Paper airplane flight path - curved with loops, unique for each step */}
-                  <svg 
-                    className="absolute w-full h-full"
+                  {/* Vertical line down from current paragraph */}
+                  <div 
+                    className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
-                      top: '0',
-                      left: '0',
+                      height: '70px',
+                      left: index % 2 === 0 ? '22.5%' : '77.5%',
+                      top: '130px'
                     }}
-                    viewBox="0 0 1000 240"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  />
+                  {/* Horizontal line */}
+                  <div 
+                    className="absolute border-t-2 border-dashed border-secondary/30"
+                    style={{
+                      width: '55%',
+                      top: '200px',
+                      left: index % 2 === 0 ? '22.5%' : '22.5%'
+                    }}
+                  />
+                  {/* Send icon */}
+                  <div 
+                    className="absolute z-10 bg-white p-1"
+                    style={{
+                      left: '48%',
+                      top: '192px',
+                      transform: `rotate(${index % 2 === 0 ? '45' : '225'}deg)`
+                    }}
                   >
-                    {/* Curved path with loops - different for each step */}
-                    <path 
-                      d={index % 2 === 0 ? flightPaths[index] : flightPaths[index]} 
-                      stroke="#0066cc"
-                      strokeOpacity="0.3"
-                      strokeWidth="2"
-                      strokeDasharray="6 4"
-                      fill="none"
-                    />
-
-                    {/* Paper airplane icon - positioned along the path */}
-                    <g 
-                      transform={`translate(${planePositions[index].x}, ${planePositions[index].y}) rotate(${planePositions[index].rotate})`}
-                    >
-                      <foreignObject width="30" height="30" x="-15" y="-15">
-                        <div className="bg-white p-1 rounded-full">
-                          <Send className="w-6 h-6 text-secondary" />
-                        </div>
-                      </foreignObject>
-                    </g>
-                  </svg>
+                    <Send className="w-6 h-6 text-secondary" />
+                  </div>
+                  {/* Vertical line to next paragraph */}
+                  <div 
+                    className="absolute border-l-2 border-dashed border-secondary/30"
+                    style={{
+                      height: '40px',
+                      left: index % 2 === 0 ? '77.5%' : '22.5%',
+                      top: '200px'
+                    }}
+                  />
                 </div>
               )}
             </div>
