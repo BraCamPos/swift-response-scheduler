@@ -65,7 +65,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
                     alt="Professional profile photo in black and white"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                     loading="eager"
                     decoding="async"
                   />
