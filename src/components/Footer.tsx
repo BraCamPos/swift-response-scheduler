@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
@@ -37,8 +36,8 @@ export const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <a href="mailto:hello@agentswiftly.com" className="hover:text-white transition-colors">
-                  hello@agentswiftly.com
+                <a href="mailto:hello@myagentswiftly.com.au" className="hover:text-white transition-colors">
+                  hello@myagentswiftly.com.au
                 </a>
               </li>
               <li className="flex items-center">
