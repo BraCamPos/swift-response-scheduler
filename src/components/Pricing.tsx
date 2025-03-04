@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -12,7 +11,6 @@ export const Pricing = () => {
         "Automated missed call responses",
         "Automated text exchanges",
         "Customised SMS wording at setup",
-        "Three text updates per month",
         "Integrated scheduling with your calendar",
         "Qualified review request workflow",
         "All communication logged in app",
