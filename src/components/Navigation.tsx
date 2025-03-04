@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Send, Phone } from "lucide-react";
+import { EnquiryForm } from "./EnquiryForm";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,13 +50,10 @@ export const Navigation = () => {
               </Button>
             </a>
             {!showPhoneNumber ? (
-              <Button 
-                variant="default" 
-                className="bg-secondary hover:bg-secondary/90"
-                onClick={handleTryNowClick}
-              >
-                Get in Touch
-              </Button>
+              <EnquiryForm 
+                triggerText="Get in Touch" 
+                buttonVariant="secondary"
+              />
             ) : (
               <div className="flex items-center text-sm font-medium">
                 <Phone className="h-4 w-4 mr-2 text-secondary" />

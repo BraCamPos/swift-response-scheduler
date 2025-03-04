@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -7,6 +6,7 @@ import { Pricing } from "@/components/Pricing";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
 import { Send, Phone } from "lucide-react";
+import { EnquiryForm } from "@/components/EnquiryForm";
 
 const Index = () => {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -35,13 +35,11 @@ const Index = () => {
               </p>
               <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
                 {!showPhoneNumber ? (
-                  <Button 
-                    size="lg" 
-                    className="bg-secondary hover:bg-secondary/90"
-                    onClick={handleTryNowClick}
-                  >
-                    Try Now
-                  </Button>
+                  <EnquiryForm 
+                    triggerText="Try Now" 
+                    buttonVariant="secondary" 
+                    buttonClassName="text-base"
+                  />
                 ) : (
                   <div className="flex items-center justify-center md:justify-start">
                     <Phone className="h-5 w-5 mr-2 text-secondary" />
