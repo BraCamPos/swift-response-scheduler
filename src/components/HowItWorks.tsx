@@ -70,44 +70,58 @@ export const HowItWorks = () => {
                   width: '100%',
                   height: '240px'
                 }}>
-                  {/* Vertical line down from current paragraph */}
-                  <div 
-                    className="absolute border-l-2 border-dashed border-secondary/30"
+                  {/* Paper airplane flight path - curved with loops */}
+                  <svg 
+                    className="absolute w-full h-full"
                     style={{
-                      height: '70px',
-                      left: index % 2 === 0 ? '22.5%' : '77.5%',
-                      top: '130px'
+                      top: '0',
+                      left: '0',
                     }}
-                  />
-                  {/* Horizontal line */}
-                  <div 
-                    className="absolute border-t-2 border-dashed border-secondary/30"
-                    style={{
-                      width: '55%',
-                      top: '200px',
-                      left: index % 2 === 0 ? '22.5%' : '22.5%'
-                    }}
-                  />
-                  {/* Send icon */}
-                  <div 
-                    className="absolute z-10 bg-white p-1"
-                    style={{
-                      left: '48%',
-                      top: '192px',
-                      transform: `rotate(${index % 2 === 0 ? '45' : '225'}deg)`
-                    }}
+                    viewBox="0 0 1000 240"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <Send className="w-6 h-6 text-secondary" />
-                  </div>
-                  {/* Vertical line to next paragraph */}
-                  <div 
-                    className="absolute border-l-2 border-dashed border-secondary/30"
-                    style={{
-                      height: '40px',
-                      left: index % 2 === 0 ? '77.5%' : '22.5%',
-                      top: '200px'
-                    }}
-                  />
+                    {/* Curved path with loops - different for odd/even items */}
+                    {index % 2 === 0 ? (
+                      <path 
+                        d={`M ${225} 130 
+                           C ${325} 40, ${400} 160, ${475} 80 
+                           C ${525} 20, ${550} 120, ${600} 100 
+                           C ${650} 80, ${700} 180, ${775} 240`} 
+                        stroke="#0066cc"
+                        strokeOpacity="0.3"
+                        strokeWidth="2"
+                        strokeDasharray="6 4"
+                        fill="none"
+                      />
+                    ) : (
+                      <path 
+                        d={`M ${775} 130 
+                           C ${675} 40, ${600} 160, ${525} 80 
+                           C ${475} 20, ${450} 120, ${400} 100 
+                           C ${350} 80, ${300} 180, ${225} 240`} 
+                        stroke="#0066cc"
+                        strokeOpacity="0.3"
+                        strokeWidth="2"
+                        strokeDasharray="6 4"
+                        fill="none"
+                      />
+                    )}
+
+                    {/* Paper airplane icon - positioned along the path */}
+                    <g 
+                      transform={index % 2 === 0 
+                        ? "translate(480, 100) rotate(45)" 
+                        : "translate(500, 100) rotate(225)"
+                      }
+                    >
+                      <foreignObject width="30" height="30" x="-15" y="-15">
+                        <div className="bg-white p-1 rounded-full">
+                          <Send className="w-6 h-6 text-secondary" />
+                        </div>
+                      </foreignObject>
+                    </g>
+                  </svg>
                 </div>
               )}
             </div>
