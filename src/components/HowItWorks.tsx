@@ -34,7 +34,7 @@ export const HowItWorks = () => {
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-16">
-          How it Works
+          How It Works
         </h2>
         <div className="max-w-6xl mx-auto">
           {steps.map((step, index) => (
