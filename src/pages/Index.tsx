@@ -33,11 +33,14 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:block animate-fade-in" style={{ animationDelay: "300ms" }}>
-              <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100">
+              <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
                 <img 
                   src="/lovable-uploads/9e49fe0a-69b6-4e9f-8918-223404f9884f.png" 
                   alt="Professional real estate agent in a grey suit talking on phone while holding a folder" 
                   className="w-full h-full object-cover"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
                 />
               </div>
             </div>
@@ -56,11 +59,13 @@ const Index = () => {
             About Us
           </h2>
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden">
+            <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
               <img 
                 src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
                 alt="Professional profile photo in black and white"
                 className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
               />
             </div>
             <h3 className="text-2xl font-semibold mb-4">Bradley Camgoz Posselt</h3>
