@@ -23,7 +23,7 @@ const Index = () => {
               <h1 className="text-3xl md:text-5xl font-playfair font-semibold mb-4 animate-fade-up">
                 Never Miss a Client Again
               </h1>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto md:mx-0 mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
+              <p className="text-lg text-gray-600 mb-6 animate-fade-up" style={{ animationDelay: "100ms" }}>
                 Instantly respond to calls you can't take and gain key insights through authentic automated conversations.
               </p>
               <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
