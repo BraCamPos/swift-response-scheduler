@@ -48,7 +48,7 @@ export const HowItWorks = () => {
                   <div className="flex items-start gap-4">
                     <div className="relative z-10 bg-white">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary/10">
-                        <step.icon className="w-5 h-5 text-secondary transform rotate-45" />
+                        <step.icon className="w-5 h-5 text-secondary transform -rotate-45" />
                       </div>
                     </div>
                     <div className="flex-1">
