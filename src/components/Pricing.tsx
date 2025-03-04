@@ -1,3 +1,4 @@
+
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -18,7 +19,7 @@ export const Pricing = () => {
       ],
     },
     {
-      name: "Swiftly Plus",
+      name: "MySwiftly Plus",
       price: "$187",
       period: "/agent/month",
       features: [
