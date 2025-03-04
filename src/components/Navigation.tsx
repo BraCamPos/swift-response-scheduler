@@ -54,7 +54,7 @@ export const Navigation = () => {
                 className="bg-secondary hover:bg-secondary/90"
                 onClick={handleTryNowClick}
               >
-                Try Now
+                Get in Touch
               </Button>
             ) : (
               <div className="flex items-center text-sm font-medium">
