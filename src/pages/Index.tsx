@@ -1,13 +1,20 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
-import { Send } from "lucide-react";
+import { Send, Phone } from "lucide-react";
 
 const Index = () => {
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+
+  const handleTryNowClick = () => {
+    setShowPhoneNumber(true);
+  };
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -27,9 +34,20 @@ const Index = () => {
                 Instantly respond to calls you can't take and gain key insights through authentic automated conversations.
               </p>
               <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-                  Book a Demo
-                </Button>
+                {!showPhoneNumber ? (
+                  <Button 
+                    size="lg" 
+                    className="bg-secondary hover:bg-secondary/90"
+                    onClick={handleTryNowClick}
+                  >
+                    Try Now
+                  </Button>
+                ) : (
+                  <div className="flex items-center justify-center md:justify-start">
+                    <Phone className="h-5 w-5 mr-2 text-secondary" />
+                    <span className="text-lg">To test My Agent Swiftly please call 0483 914 477</span>
+                  </div>
+                )}
               </div>
             </div>
             <div className="hidden md:block animate-fade-in" style={{ animationDelay: "300ms" }}>

@@ -1,10 +1,11 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Send } from "lucide-react";
+import { Send, Phone } from "lucide-react";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,10 @@ export const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleTryNowClick = () => {
+    setShowPhoneNumber(true);
+  };
 
   return (
     <nav
@@ -43,9 +48,20 @@ export const Navigation = () => {
                 Login
               </Button>
             </a>
-            <Button variant="default" className="bg-secondary hover:bg-secondary/90">
-              Book a Demo
-            </Button>
+            {!showPhoneNumber ? (
+              <Button 
+                variant="default" 
+                className="bg-secondary hover:bg-secondary/90"
+                onClick={handleTryNowClick}
+              >
+                Try Now
+              </Button>
+            ) : (
+              <div className="flex items-center text-sm font-medium">
+                <Phone className="h-4 w-4 mr-2 text-secondary" />
+                <span>To test My Agent Swiftly please call 0483 914 477</span>
+              </div>
+            )}
           </div>
         </div>
       </div>
