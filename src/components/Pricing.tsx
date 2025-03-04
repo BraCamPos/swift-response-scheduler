@@ -1,11 +1,10 @@
-
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Pricing = () => {
   const plans = [
     {
-      name: "Swiftly",
+      name: "MySwiftly",
       price: "$127",
       period: "/agent/month",
       features: [
@@ -23,7 +22,7 @@ export const Pricing = () => {
       price: "$187",
       period: "/agent/month",
       features: [
-        "Everything in Swiftly, plus",
+        "Everything in MySwiftly, plus",
         "Detailed SMS responses including links to listings and inspection times",
         "Weekly SMS wording updates",
       ],
