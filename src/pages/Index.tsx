@@ -59,9 +59,9 @@ const Index = () => {
             About Us
           </h2>
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="md:w-2/5">
-                <div className="w-40 h-40 mx-auto rounded-full overflow-hidden shadow-md">
+            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+              <div className="md:w-1/4">
+                <div className="w-48 h-48 md:w-full md:h-auto aspect-square mx-auto rounded-full overflow-hidden shadow-md">
                   <img 
                     src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
                     alt="Professional profile photo in black and white"
@@ -71,7 +71,7 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="md:w-3/5">
+              <div className="md:w-3/4">
                 <p className="text-gray-600 mb-6 text-center md:text-left">
                   As a passionate innovator in real estate technology, My Agent Swiftly was founded with a vision to revolutionize how real estate agents communicate with their clients. With years of experience in both real estate and technology sectors, we recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
                 </p>
