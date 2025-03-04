@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -7,7 +6,7 @@ export const Pricing = () => {
     {
       name: "MySwiftly",
       price: "$127",
-      period: "/agent/month",
+      period: "/agent /month",
       features: [
         "Automated missed call responses",
         "Automated text exchanges",
@@ -21,7 +20,7 @@ export const Pricing = () => {
     {
       name: "MySwiftly Plus",
       price: "$187",
-      period: "/agent/month",
+      period: "/agent /month",
       features: [
         "Everything in MySwiftly, plus",
         "Detailed SMS responses including links to listings and inspection times",
