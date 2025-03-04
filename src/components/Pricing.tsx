@@ -1,6 +1,6 @@
 
 import { Check } from "lucide-react";
-import { Button } from "./ui/button";
+import { ContactFormDialog } from "./ContactFormDialog";
 
 export const Pricing = () => {
   const plans = [
@@ -59,9 +59,10 @@ export const Pricing = () => {
               </div>
               <div className="mt-auto">
                 <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
-                <Button className="w-full bg-secondary hover:bg-secondary/90">
-                  Enquire Now
-                </Button>
+                <ContactFormDialog 
+                  triggerText="Enquire Now" 
+                  buttonClassName="w-full"
+                />
               </div>
             </div>
           ))}
