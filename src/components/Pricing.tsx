@@ -6,7 +6,7 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Swiftly",
-      price: "$127",
+      price: "$127*",
       period: "/agent/month",
       features: [
         "Automated missed call responses",
@@ -20,7 +20,7 @@ export const Pricing = () => {
     },
     {
       name: "Swiftly Plus",
-      price: "$187",
+      price: "$187*",
       period: "/agent/month",
       features: [
         "Everything in Swiftly",
@@ -58,6 +58,7 @@ export const Pricing = () => {
                   </li>
                 ))}
               </ul>
+              <p className="text-sm text-gray-500 italic mb-4">*min. three months</p>
               <Button className="w-full bg-secondary hover:bg-secondary/90">
                 Get Started
               </Button>
