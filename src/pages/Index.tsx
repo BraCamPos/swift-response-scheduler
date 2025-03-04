@@ -70,10 +70,10 @@ const Index = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4">Bradley Camgoz Posselt</h3>
             <p className="text-gray-600 mb-6">
-              As a passionate innovator in real estate technology, Bradley Camgoz Posselt founded Agent Swiftly with a vision to revolutionize how real estate agents communicate with their clients. With years of experience in both real estate and technology sectors, Bradley recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
+              As a passionate innovator in real estate technology, Bradley Camgoz Posselt founded My Agent Swiftly with a vision to revolutionize how real estate agents communicate with their clients. With years of experience in both real estate and technology sectors, Bradley recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
             </p>
             <p className="text-gray-600">
-              Under his leadership, Agent Swiftly has grown to become a trusted partner for real estate professionals across Australia, helping them leverage cutting-edge AI technology to provide exceptional service while maintaining the personal touch that is so crucial in the real estate industry.
+              Under his leadership, My Agent Swiftly has grown to become a trusted partner for real estate professionals across Australia, helping them leverage cutting-edge AI technology to provide exceptional service while maintaining the personal touch that is so crucial in the real estate industry.
             </p>
           </div>
         </div>

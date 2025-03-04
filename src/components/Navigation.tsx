@@ -26,7 +26,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center space-x-2">
             <Send className="h-8 w-8 text-secondary" />
-            <span className="font-playfair text-xl font-semibold">Agent Swiftly</span>
+            <span className="font-playfair text-xl font-semibold">My Agent Swiftly</span>
           </a>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#how-it-works" className="text-sm font-medium hover:text-secondary transition-colors">

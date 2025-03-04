@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="font-playfair text-xl font-semibold text-white">Agent Swiftly</h3>
+            <h3 className="font-playfair text-xl font-semibold text-white">My Agent Swiftly</h3>
             <p className="text-sm">
               Revolutionizing real estate communications with smart automation and personalized responses.
             </p>
@@ -60,7 +60,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Agent Swiftly. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} My Agent Swiftly. All rights reserved.</p>
         </div>
       </div>
     </footer>
