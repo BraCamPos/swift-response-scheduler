@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -23,11 +22,9 @@ export const Pricing = () => {
       price: "$187",
       period: "/agent/month",
       features: [
-        "Everything in Swiftly",
-        "Advanced workflow automation",
-        "Priority support",
-        "Unlimited review requests",
-        "Custom branding",
+        "Everything in Swiftly, plus",
+        "Detailed SMS responses including links to listings and inspection times",
+        "Weekly SMS wording updates",
       ],
     },
   ];
