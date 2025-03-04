@@ -40,7 +40,7 @@ const Index = () => {
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
-                  fetchpriority="high"
+                  fetchPriority="high"
                 />
               </div>
             </div>
