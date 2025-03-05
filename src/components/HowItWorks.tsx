@@ -60,14 +60,14 @@ export const HowItWorks = () => {
           bottomLinePosition: 280, // Lower bottom connection
           bottomLineHeight: 20 // Shorter bottom line
         };
-      case 2: // Third step to fourth - ADJUSTED FOR BETTER SPACING
+      case 2: // Third step to fourth - ADJUSTED DASHED LINE UPWARD
         return {
-          containerHeight: 290, // Increased height
-          lineTopPosition: 200, // Start line much lower
-          lineHeight: 70, // Medium line
-          arrowPosition: 235, // Position plane in middle of line
-          bottomLinePosition: 270, // Lower bottom connection
-          bottomLineHeight: 20 // Shorter bottom line
+          containerHeight: 260, // Reduced height to move everything up
+          lineTopPosition: 160, // Start line higher up
+          lineHeight: 70, // Keep same line length
+          arrowPosition: 195, // Center plane on the dashed line
+          bottomLinePosition: 230, // Position connection line higher
+          bottomLineHeight: 30 // Slightly longer bottom connection
         };
       case 3: // Fourth step to fifth
         return {
