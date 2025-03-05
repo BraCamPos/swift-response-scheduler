@@ -1,8 +1,15 @@
 
-import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send } from "lucide-react";
-import { EnquiryForm } from "./EnquiryForm";
+import { useState } from "react";
+import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const HowItWorks = () => {
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+
+  const handleTryNowClick = () => {
+    setShowPhoneNumber(true);
+  };
+
   const steps = [
     {
       icon: PhoneOff,
@@ -115,13 +122,22 @@ export const HowItWorks = () => {
           ))}
         </div>
         
-        {/* Try Now Button (changed from Get In Touch) */}
+        {/* Try Now Button (now shows phone number when clicked) */}
         <div className="flex justify-center mt-16 animate-fade-up" style={{ animationDelay: "500ms" }}>
-          <EnquiryForm 
-            triggerText="Try Now" 
-            buttonVariant="secondary" 
-            buttonClassName="text-base px-8 py-3 text-lg"
-          />
+          {!showPhoneNumber ? (
+            <Button 
+              variant="secondary"
+              className="text-base px-8 py-3 text-lg"
+              onClick={handleTryNowClick}
+            >
+              Try Now
+            </Button>
+          ) : (
+            <div className="flex items-center text-center">
+              <Phone className="h-5 w-5 mr-2 text-secondary" />
+              <span className="text-lg">To test My Agent Swiftly please call 0483 914 477</span>
+            </div>
+          )}
         </div>
       </div>
     </section>
