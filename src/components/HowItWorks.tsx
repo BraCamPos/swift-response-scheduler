@@ -38,6 +38,58 @@ export const HowItWorks = () => {
     }
   ];
 
+  // Custom spacing for mobile connectors to prevent text overlap
+  const getMobileConnectorStyles = (index: number) => {
+    // Different spacing for each step based on its content length
+    switch (index) {
+      case 0: // First step to second
+        return {
+          containerHeight: 240,
+          lineTopPosition: 160,
+          lineHeight: 60,
+          arrowPosition: 215,
+          bottomLinePosition: 230,
+          bottomLineHeight: 25
+        };
+      case 1: // Second step to third
+        return {
+          containerHeight: 260,
+          lineTopPosition: 170,
+          lineHeight: 70,
+          arrowPosition: 235,
+          bottomLinePosition: 250,
+          bottomLineHeight: 25
+        };
+      case 2: // Third step to fourth
+        return {
+          containerHeight: 230,
+          lineTopPosition: 150,
+          lineHeight: 60,
+          arrowPosition: 205,
+          bottomLinePosition: 220,
+          bottomLineHeight: 25
+        };
+      case 3: // Fourth step to fifth
+        return {
+          containerHeight: 250,
+          lineTopPosition: 160,
+          lineHeight: 70,
+          arrowPosition: 225,
+          bottomLinePosition: 240,
+          bottomLineHeight: 25
+        };
+      default:
+        return {
+          containerHeight: 240,
+          lineTopPosition: 160,
+          lineHeight: 60,
+          arrowPosition: 215,
+          bottomLinePosition: 230,
+          bottomLineHeight: 25
+        };
+    }
+  };
+
   return (
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -136,40 +188,40 @@ export const HowItWorks = () => {
                 </div>
               )}
 
-              {/* Connection lines - Mobile version - ADJUSTED FOR BETTER SPACING */}
+              {/* Connection lines - Mobile version with CUSTOMIZED SPACING */}
               {index < steps.length - 1 && (
                 <div className="absolute z-0 md:hidden" style={{
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '220px' // Increased height to provide more space
+                  height: getMobileConnectorStyles(index).containerHeight // Customized height
                 }}>
                   {/* Center-aligned vertical line connecting steps */}
                   <div className="absolute left-1/2 -translate-x-1/2">
-                    {/* Vertical line down from current paragraph - starts lower */}
+                    {/* Vertical line down from current paragraph - with custom positioning */}
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '60px',
-                        top: '140px' // Increased to push the line further down
+                        height: getMobileConnectorStyles(index).lineHeight,
+                        top: getMobileConnectorStyles(index).lineTopPosition // Custom top position
                       }}
                     />
-                    {/* Arrow icon - moved down */}
+                    {/* Arrow icon - with custom positioning */}
                     <div 
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: '195px' // Adjusted to move the arrow icon further down
+                        top: getMobileConnectorStyles(index).arrowPosition // Custom arrow position
                       }}
                     >
                       <Send className="w-5 h-5 text-secondary rotate-90" />
                     </div>
-                    {/* Vertical line to next paragraph */}
+                    {/* Vertical line to next paragraph - with custom positioning */}
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '25px',
-                        top: '210px' // Adjusted to connect properly with the next step
+                        height: getMobileConnectorStyles(index).bottomLineHeight,
+                        top: getMobileConnectorStyles(index).bottomLinePosition // Custom bottom position
                       }}
                     />
                   </div>
