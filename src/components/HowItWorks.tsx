@@ -60,13 +60,13 @@ export const HowItWorks = () => {
           bottomLinePosition: 280, // Lower bottom connection
           bottomLineHeight: 20 // Shorter bottom line
         };
-      case 2: // Third step to fourth
+      case 2: // Third step to fourth - ADJUSTED FOR BETTER SPACING
         return {
-          containerHeight: 260, // Increased height
-          lineTopPosition: 180, // Start line lower
-          lineHeight: 60, // Medium line
-          arrowPosition: 210, // Position plane in middle of line
-          bottomLinePosition: 240, // Lower bottom connection
+          containerHeight: 290, // Increased height
+          lineTopPosition: 200, // Start line much lower
+          lineHeight: 70, // Medium line
+          arrowPosition: 235, // Position plane in middle of line
+          bottomLinePosition: 270, // Lower bottom connection
           bottomLineHeight: 20 // Shorter bottom line
         };
       case 3: // Fourth step to fifth
