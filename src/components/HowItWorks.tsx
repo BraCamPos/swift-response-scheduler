@@ -1,3 +1,4 @@
+
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send } from "lucide-react";
 import { EnquiryForm } from "./EnquiryForm";
 
@@ -114,10 +115,10 @@ export const HowItWorks = () => {
           ))}
         </div>
         
-        {/* Get In Touch Button */}
+        {/* Try Now Button (changed from Get In Touch) */}
         <div className="flex justify-center mt-16 animate-fade-up" style={{ animationDelay: "500ms" }}>
           <EnquiryForm 
-            triggerText="Get In Touch" 
+            triggerText="Try Now" 
             buttonVariant="secondary" 
             buttonClassName="text-base px-8 py-3 text-lg"
           />
