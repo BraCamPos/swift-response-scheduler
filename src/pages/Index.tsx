@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -35,11 +36,13 @@ const Index = () => {
               </p>
               <div className="animate-fade-up" style={{ animationDelay: "200ms" }}>
                 {!showPhoneNumber ? (
-                  <EnquiryForm 
-                    triggerText="Try Now" 
-                    buttonVariant="secondary" 
-                    buttonClassName="text-base"
-                  />
+                  <Button 
+                    variant="secondary" 
+                    className="text-base"
+                    onClick={handleTryNowClick}
+                  >
+                    Try Now
+                  </Button>
                 ) : (
                   <div className="flex items-center justify-center md:justify-start">
                     <Phone className="h-5 w-5 mr-2 text-secondary" />
