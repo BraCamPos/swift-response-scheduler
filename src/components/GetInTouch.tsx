@@ -9,8 +9,13 @@ export const GetInTouch = () => {
   };
 
   const handleTextClick = () => {
-    // Open SMS app with the phone number
-    window.location.href = "sms:0483914477";
+    // Open SMS app with the phone number and prefilled text
+    const message = encodeURIComponent("I'd like to know more about Agent Swiftly");
+    window.location.href = `sms:0483914477?body=${message}`;
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = "tel:0483914477";
   };
 
   return (
@@ -26,7 +31,11 @@ export const GetInTouch = () => {
                 <Phone className="h-6 w-6 text-secondary mr-3 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <p className="text-gray-700">0483 914 477</p>
+                  <p className="text-gray-700">
+                    <a href="tel:0483914477" className="hover:text-secondary transition-colors" onClick={handlePhoneClick}>
+                      0483 914 477
+                    </a>
+                  </p>
                 </div>
               </div>
               

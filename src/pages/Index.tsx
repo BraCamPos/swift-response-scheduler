@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -14,6 +13,10 @@ const Index = () => {
 
   const handleTryNowClick = () => {
     setShowPhoneNumber(true);
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = "tel:0483914477";
   };
 
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
@@ -54,7 +57,13 @@ const Index = () => {
                 ) : (
                   <div className="flex items-center justify-center md:justify-start">
                     <Phone className="h-5 w-5 mr-2 text-secondary" />
-                    <span className="text-lg">To test My Agent Swiftly please call 0483 914 477</span>
+                    <a 
+                      href="tel:0483914477" 
+                      className="text-lg hover:text-secondary transition-colors"
+                      onClick={handlePhoneClick}
+                    >
+                      To test My Agent Swiftly please call 0483 914 477
+                    </a>
                   </div>
                 )}
               </div>

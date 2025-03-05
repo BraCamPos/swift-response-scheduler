@@ -20,6 +20,10 @@ export const Navigation = () => {
     setShowPhoneNumber(true);
   };
 
+  const handlePhoneClick = () => {
+    window.location.href = "tel:0483914477";
+  };
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -91,7 +95,13 @@ export const Navigation = () => {
             ) : (
               <div className="flex items-center text-sm font-medium">
                 <Phone className="h-4 w-4 mr-2 text-secondary" />
-                <span>To test My Agent Swiftly please call 0483 914 477</span>
+                <a 
+                  href="tel:0483914477" 
+                  className="hover:text-secondary transition-colors"
+                  onClick={handlePhoneClick}
+                >
+                  To test My Agent Swiftly please call 0483 914 477
+                </a>
               </div>
             )}
           </div>
@@ -163,7 +173,13 @@ export const Navigation = () => {
               ) : (
                 <div className="flex items-center text-sm font-medium">
                   <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
-                  <span>To test My Agent Swiftly please call 0483 914 477</span>
+                  <a 
+                    href="tel:0483914477" 
+                    className="hover:text-secondary transition-colors"
+                    onClick={handlePhoneClick}
+                  >
+                    To test My Agent Swiftly please call 0483 914 477
+                  </a>
                 </div>
               )}
             </div>

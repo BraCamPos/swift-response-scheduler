@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,6 +7,10 @@ export const HowItWorks = () => {
 
   const handleTryNowClick = () => {
     setShowPhoneNumber(true);
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = "tel:0483914477";
   };
 
   const steps = [
@@ -38,45 +41,43 @@ export const HowItWorks = () => {
     }
   ];
 
-  // Custom spacing for mobile connectors to prevent text overlap
   const getMobileConnectorStyles = (index: number) => {
-    // Different spacing for each step based on its content length and required even spacing
     switch (index) {
       case 0: // First step to second
         return {
-          containerHeight: 280, // Increased height
-          lineTopPosition: 180, // Start line lower
-          lineHeight: 80, // Longer line
-          arrowPosition: 220, // Position plane in middle of line
-          bottomLinePosition: 260, // Lower bottom connection
-          bottomLineHeight: 20 // Shorter bottom line
+          containerHeight: 280,
+          lineTopPosition: 180,
+          lineHeight: 80,
+          arrowPosition: 220,
+          bottomLinePosition: 260,
+          bottomLineHeight: 20
         };
       case 1: // Second step to third - longest content
         return {
-          containerHeight: 300, // Increased height
-          lineTopPosition: 200, // Start line lower
-          lineHeight: 80, // Longer line
-          arrowPosition: 240, // Position plane in middle of line
-          bottomLinePosition: 280, // Lower bottom connection
-          bottomLineHeight: 20 // Shorter bottom line
+          containerHeight: 300,
+          lineTopPosition: 200,
+          lineHeight: 80,
+          arrowPosition: 240,
+          bottomLinePosition: 280,
+          bottomLineHeight: 20
         };
       case 2: // Third step to fourth - ADJUSTED DASHED LINE UPWARD
         return {
-          containerHeight: 240, // Reduced height to move everything up
-          lineTopPosition: 140, // Start line higher up as requested
-          lineHeight: 70, // Keep same line length
-          arrowPosition: 175, // Center plane on the dashed line
-          bottomLinePosition: 200, // Position connection line higher as requested
-          bottomLineHeight: 40 // Slightly longer bottom connection
+          containerHeight: 240,
+          lineTopPosition: 140,
+          lineHeight: 70,
+          arrowPosition: 175,
+          bottomLinePosition: 200,
+          bottomLineHeight: 40
         };
       case 3: // Fourth step to fifth
         return {
-          containerHeight: 280, // Increased height
-          lineTopPosition: 190, // Start line lower
-          lineHeight: 70, // Medium line
-          arrowPosition: 225, // Position plane in middle of line
-          bottomLinePosition: 260, // Lower bottom connection 
-          bottomLineHeight: 20 // Shorter bottom line
+          containerHeight: 280,
+          lineTopPosition: 190,
+          lineHeight: 70,
+          arrowPosition: 225,
+          bottomLinePosition: 260,
+          bottomLineHeight: 20
         };
       default:
         return {
@@ -103,7 +104,6 @@ export const HowItWorks = () => {
               className="relative mb-36 last:mb-0 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Desktop layout */}
               <div className={`hidden md:flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 <div className="w-[45%]">
                   <div className="flex items-start gap-4">
@@ -124,7 +124,6 @@ export const HowItWorks = () => {
                 <div className="w-[45%]" />
               </div>
 
-              {/* Mobile layout */}
               <div className="md:hidden">
                 <div className="flex items-start gap-4">
                   <div className="relative z-10 bg-white">
@@ -139,7 +138,6 @@ export const HowItWorks = () => {
                 </div>
               </div>
 
-              {/* Connection lines - Desktop version */}
               {index < steps.length - 1 && (
                 <div className="absolute z-0 hidden md:block" style={{
                   left: '0',
@@ -147,7 +145,6 @@ export const HowItWorks = () => {
                   width: '100%',
                   height: '240px'
                 }}>
-                  {/* Vertical line down from current paragraph */}
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
@@ -156,7 +153,6 @@ export const HowItWorks = () => {
                       top: '130px'
                     }}
                   />
-                  {/* Horizontal line */}
                   <div 
                     className="absolute border-t-2 border-dashed border-secondary/30"
                     style={{
@@ -165,7 +161,6 @@ export const HowItWorks = () => {
                       left: index % 2 === 0 ? '22.5%' : '22.5%'
                     }}
                   />
-                  {/* Send icon */}
                   <div 
                     className="absolute z-10 bg-white p-1"
                     style={{
@@ -176,7 +171,6 @@ export const HowItWorks = () => {
                   >
                     <Send className="w-6 h-6 text-secondary" />
                   </div>
-                  {/* Vertical line to next paragraph */}
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
                     style={{
@@ -188,40 +182,35 @@ export const HowItWorks = () => {
                 </div>
               )}
 
-              {/* Connection lines - Mobile version with improved CUSTOMIZED SPACING */}
               {index < steps.length - 1 && (
                 <div className="absolute z-0 md:hidden" style={{
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: getMobileConnectorStyles(index).containerHeight // Customized height
+                  height: getMobileConnectorStyles(index).containerHeight
                 }}>
-                  {/* Center-aligned vertical line connecting steps */}
                   <div className="absolute left-1/2 -translate-x-1/2">
-                    {/* Vertical line down from current paragraph - with custom positioning */}
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
                         height: getMobileConnectorStyles(index).lineHeight,
-                        top: getMobileConnectorStyles(index).lineTopPosition // Custom top position
+                        top: getMobileConnectorStyles(index).lineTopPosition
                       }}
                     />
-                    {/* Arrow icon - with custom positioning */}
                     <div 
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: getMobileConnectorStyles(index).arrowPosition // Custom arrow position
+                        top: getMobileConnectorStyles(index).arrowPosition
                       }}
                     >
                       <Send className="w-5 h-5 text-secondary rotate-90" />
                     </div>
-                    {/* Vertical line to next paragraph - with custom positioning */}
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
                         height: getMobileConnectorStyles(index).bottomLineHeight,
-                        top: getMobileConnectorStyles(index).bottomLinePosition // Custom bottom position
+                        top: getMobileConnectorStyles(index).bottomLinePosition
                       }}
                     />
                   </div>
@@ -231,7 +220,6 @@ export const HowItWorks = () => {
           ))}
         </div>
         
-        {/* Try Now Button (now shows phone number when clicked) */}
         <div className="flex justify-center mt-16 animate-fade-up" style={{ animationDelay: "500ms" }}>
           {!showPhoneNumber ? (
             <Button 
@@ -244,7 +232,13 @@ export const HowItWorks = () => {
           ) : (
             <div className="flex items-center text-center">
               <Phone className="h-5 w-5 mr-2 text-secondary" />
-              <span className="text-lg">To test My Agent Swiftly please call 0483 914 477</span>
+              <a 
+                href="tel:0483914477" 
+                className="text-lg hover:text-secondary transition-colors"
+                onClick={handlePhoneClick}
+              >
+                To test My Agent Swiftly please call 0483 914 477
+              </a>
             </div>
           )}
         </div>
