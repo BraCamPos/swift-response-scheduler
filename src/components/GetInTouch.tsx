@@ -9,9 +9,8 @@ export const GetInTouch = () => {
   };
 
   const handleTextClick = () => {
-    // Open SMS app with the phone number and prefilled message
-    const message = encodeURIComponent("I'd like to know more about Agent Swiftly");
-    window.location.href = `sms:0483914477?body=${message}`;
+    // Open SMS app with the phone number
+    window.location.href = "sms:0483914477";
   };
 
   return (
