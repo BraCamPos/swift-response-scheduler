@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,9 +8,8 @@ export const GetInTouch = () => {
   };
 
   const handleTextClick = () => {
-    // Open SMS app with the phone number and prefilled text
-    const message = encodeURIComponent("I'd like to know more about Agent Swiftly");
-    window.location.href = `sms:0483914477?body=${message}`;
+    // Open SMS app with just the phone number, without any prefilled text
+    window.location.href = `sms:0483914477`;
   };
 
   const handlePhoneClick = () => {
