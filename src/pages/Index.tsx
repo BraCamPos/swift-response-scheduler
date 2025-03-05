@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -13,6 +14,14 @@ const Index = () => {
 
   const handleTryNowClick = () => {
     setShowPhoneNumber(true);
+  };
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (

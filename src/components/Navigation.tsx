@@ -24,6 +24,17 @@ export const Navigation = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -41,13 +52,25 @@ export const Navigation = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#how-it-works" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a 
+              href="#how-it-works" 
+              className="text-sm font-medium hover:text-secondary transition-colors"
+              onClick={(e) => handleAnchorClick(e, "how-it-works")}
+            >
               How It Works
             </a>
-            <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a 
+              href="#pricing" 
+              className="text-sm font-medium hover:text-secondary transition-colors"
+              onClick={(e) => handleAnchorClick(e, "pricing")}
+            >
               Pricing
             </a>
-            <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a 
+              href="#about" 
+              className="text-sm font-medium hover:text-secondary transition-colors"
+              onClick={(e) => handleAnchorClick(e, "about")}
+            >
               About Us
             </a>
             <a href="https://app.agentswiftly.com.au" target="_blank" rel="noopener noreferrer">
@@ -56,7 +79,11 @@ export const Navigation = () => {
               </Button>
             </a>
             {!showPhoneNumber ? (
-              <a href="#contact" className="inline-block">
+              <a 
+                href="#contact" 
+                className="inline-block"
+                onClick={(e) => handleAnchorClick(e, "contact")}
+              >
                 <Button variant="secondary">
                   Get In Touch
                 </Button>
@@ -94,21 +121,21 @@ export const Navigation = () => {
             <a 
               href="#how-it-works" 
               className="text-sm font-medium hover:text-secondary transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleAnchorClick(e, "how-it-works")}
             >
               How It Works
             </a>
             <a 
               href="#pricing" 
               className="text-sm font-medium hover:text-secondary transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleAnchorClick(e, "pricing")}
             >
               Pricing
             </a>
             <a 
               href="#about" 
               className="text-sm font-medium hover:text-secondary transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => handleAnchorClick(e, "about")}
             >
               About Us
             </a>
@@ -117,7 +144,6 @@ export const Navigation = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="py-2"
-              onClick={() => setMobileMenuOpen(false)}
             >
               <Button variant="outline" className="w-full hover:text-secondary">
                 Login
@@ -125,7 +151,11 @@ export const Navigation = () => {
             </a>
             <div className="py-2">
               {!showPhoneNumber ? (
-                <a href="#contact" className="block" onClick={() => setMobileMenuOpen(false)}>
+                <a 
+                  href="#contact" 
+                  className="block"
+                  onClick={(e) => handleAnchorClick(e, "contact")}
+                >
                   <Button variant="secondary" className="w-full">
                     Get In Touch
                   </Button>
@@ -143,4 +173,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-

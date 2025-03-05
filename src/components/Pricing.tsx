@@ -29,6 +29,14 @@ export const Pricing = () => {
     },
   ];
 
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="pricing" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -59,7 +67,11 @@ export const Pricing = () => {
               </div>
               <div className="mt-auto">
                 <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
-                <a href="#contact" className="block">
+                <a 
+                  href="#contact" 
+                  className="block"
+                  onClick={(e) => handleAnchorClick(e, "contact")}
+                >
                   <Button 
                     variant="secondary" 
                     className="w-full"
@@ -75,4 +87,3 @@ export const Pricing = () => {
     </section>
   );
 };
-

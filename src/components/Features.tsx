@@ -26,6 +26,14 @@ export const Features = () => {
     },
   ];
 
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="features" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -48,7 +56,11 @@ export const Features = () => {
         
         {/* Get In Touch Button */}
         <div className="flex justify-center mt-12 animate-fade-up" style={{ animationDelay: "500ms" }}>
-          <a href="#contact" className="inline-block">
+          <a 
+            href="#contact" 
+            className="inline-block"
+            onClick={(e) => handleAnchorClick(e, "contact")}
+          >
             <Button 
               variant="secondary" 
               className="text-base px-8 py-3 text-lg"
@@ -61,4 +73,3 @@ export const Features = () => {
     </section>
   );
 };
-
