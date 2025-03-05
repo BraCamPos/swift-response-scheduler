@@ -69,7 +69,7 @@ export const GetInTouch = () => {
                 className="w-full py-6 text-lg border-secondary text-secondary hover:bg-secondary hover:text-white"
                 onClick={handleTextClick}
               >
-                Text Us Now
+                Text Us Now (Mobile Only)
               </Button>
             </div>
           </div>
