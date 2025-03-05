@@ -73,7 +73,7 @@ const Index = () => {
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
-            Contact Us
+            Get In Touch
           </h2>
           <div className="max-w-3xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
