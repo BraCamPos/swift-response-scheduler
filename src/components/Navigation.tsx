@@ -97,7 +97,7 @@ export const Navigation = () => {
                 <Phone className="h-4 w-4 mr-2 text-secondary" />
                 <a 
                   href="tel:0483914477" 
-                  className="hover:text-secondary transition-colors"
+                  className="hover:text-secondary transition-colors underline"
                   onClick={handlePhoneClick}
                 >
                   To test My Agent Swiftly please call 0483 914 477
@@ -175,7 +175,7 @@ export const Navigation = () => {
                   <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
                   <a 
                     href="tel:0483914477" 
-                    className="hover:text-secondary transition-colors"
+                    className="hover:text-secondary transition-colors underline"
                     onClick={handlePhoneClick}
                   >
                     To test My Agent Swiftly please call 0483 914 477

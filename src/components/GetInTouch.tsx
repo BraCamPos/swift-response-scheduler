@@ -32,7 +32,7 @@ export const GetInTouch = () => {
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-gray-700">
-                    <a href="tel:0483914477" className="hover:text-secondary transition-colors" onClick={handlePhoneClick}>
+                    <a href="tel:0483914477" className="hover:text-secondary transition-colors underline" onClick={handlePhoneClick}>
                       0483 914 477
                     </a>
                   </p>

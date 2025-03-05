@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -59,7 +60,7 @@ const Index = () => {
                     <Phone className="h-5 w-5 mr-2 text-secondary" />
                     <a 
                       href="tel:0483914477" 
-                      className="text-lg hover:text-secondary transition-colors"
+                      className="text-lg hover:text-secondary transition-colors underline"
                       onClick={handlePhoneClick}
                     >
                       To test My Agent Swiftly please call 0483 914 477
