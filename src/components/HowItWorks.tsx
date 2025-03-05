@@ -62,12 +62,12 @@ export const HowItWorks = () => {
         };
       case 2: // Third step to fourth - ADJUSTED DASHED LINE UPWARD
         return {
-          containerHeight: 260, // Reduced height to move everything up
-          lineTopPosition: 160, // Start line higher up
+          containerHeight: 240, // Reduced height to move everything up
+          lineTopPosition: 140, // Start line higher up as requested
           lineHeight: 70, // Keep same line length
-          arrowPosition: 195, // Center plane on the dashed line
-          bottomLinePosition: 230, // Position connection line higher
-          bottomLineHeight: 30 // Slightly longer bottom connection
+          arrowPosition: 175, // Center plane on the dashed line
+          bottomLinePosition: 200, // Position connection line higher as requested
+          bottomLineHeight: 40 // Slightly longer bottom connection
         };
       case 3: // Fourth step to fifth
         return {
