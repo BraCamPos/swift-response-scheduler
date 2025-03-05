@@ -28,7 +28,7 @@ export const GetInTouch = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="flex items-start">
-                <Phone className="h-6 w-6 text-secondary mr-3 mt-1" />
+                <Phone className="h-5 w-5 text-secondary mr-3 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-gray-700">
@@ -40,7 +40,7 @@ export const GetInTouch = () => {
               </div>
               
               <div className="flex items-start">
-                <Mail className="h-6 w-6 text-secondary mr-3 mt-1" />
+                <Mail className="h-5 w-5 text-secondary mr-3 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
                   <p className="text-gray-700">hello@myagentswiftly.com.au</p>
@@ -48,7 +48,7 @@ export const GetInTouch = () => {
               </div>
               
               <div className="flex items-start">
-                <MapPin className="h-6 w-6 text-secondary mr-3 mt-1" />
+                <MapPin className="h-5 w-5 text-secondary mr-3 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Address</h3>
                   <p className="text-gray-700">123 Real Estate Avenue<br />Sydney, NSW 2000</p>
