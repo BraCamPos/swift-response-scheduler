@@ -1,5 +1,6 @@
 
 import { MessageSquare, CalendarCheck, Star, Settings } from "lucide-react";
+import { EnquiryForm } from "./EnquiryForm";
 
 export const Features = () => {
   const features = [
@@ -43,6 +44,15 @@ export const Features = () => {
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
+        </div>
+        
+        {/* Get In Touch Button */}
+        <div className="flex justify-center mt-12 animate-fade-up" style={{ animationDelay: "500ms" }}>
+          <EnquiryForm 
+            triggerText="Get In Touch" 
+            buttonVariant="secondary" 
+            buttonClassName="text-base px-8 py-3 text-lg"
+          />
         </div>
       </div>
     </section>
