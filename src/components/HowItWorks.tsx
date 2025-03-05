@@ -51,7 +51,8 @@ export const HowItWorks = () => {
               className="relative mb-36 last:mb-0 animate-fade-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+              {/* Desktop layout */}
+              <div className={`hidden md:flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 <div className="w-[45%]">
                   <div className="flex items-start gap-4">
                     <div className="relative z-10 bg-white">
@@ -71,8 +72,24 @@ export const HowItWorks = () => {
                 <div className="w-[45%]" />
               </div>
 
+              {/* Mobile layout */}
+              <div className="md:hidden">
+                <div className="flex items-start gap-4">
+                  <div className="relative z-10 bg-white">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary/10">
+                      <step.icon className="w-5 h-5 text-secondary" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                    <p className="text-gray-600">{step.description}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Connection lines - Desktop version */}
               {index < steps.length - 1 && (
-                <div className="absolute z-0" style={{
+                <div className="absolute z-0 hidden md:block" style={{
                   left: '0',
                   top: '0',
                   width: '100%',
@@ -116,6 +133,36 @@ export const HowItWorks = () => {
                       top: '200px'
                     }}
                   />
+                </div>
+              )}
+
+              {/* Connection lines - Mobile version */}
+              {index < steps.length - 1 && (
+                <div className="absolute z-0 md:hidden" style={{
+                  left: '0',
+                  top: '0',
+                  width: '100%',
+                  height: '100px'
+                }}>
+                  {/* Simplified vertical line connecting steps */}
+                  <div 
+                    className="absolute border-l-2 border-dashed border-secondary/30"
+                    style={{
+                      height: '100px',
+                      left: '20px',
+                      top: '50px'
+                    }}
+                  />
+                  {/* Small arrow icon */}
+                  <div 
+                    className="absolute z-10 bg-white p-1"
+                    style={{
+                      left: '12px',
+                      top: '95px'
+                    }}
+                  >
+                    <Send className="w-5 h-5 text-secondary rotate-90" />
+                  </div>
                 </div>
               )}
             </div>
