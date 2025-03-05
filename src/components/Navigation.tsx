@@ -94,14 +94,16 @@ export const Navigation = () => {
               </a>
             ) : (
               <div className="flex items-center text-sm font-medium">
-                <Phone className="h-4 w-4 mr-2 text-secondary" />
-                <a 
-                  href="tel:0483914477" 
-                  className="hover:text-secondary transition-colors underline"
-                  onClick={handlePhoneClick}
-                >
-                  To test My Agent Swiftly please call 0483 914 477
-                </a>
+                <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
+                <span>
+                  To test My Agent Swiftly please call <a 
+                    href="tel:0483914477" 
+                    className="hover:text-secondary transition-colors underline"
+                    onClick={handlePhoneClick}
+                  >
+                    0483 914 477
+                  </a>
+                </span>
               </div>
             )}
           </div>
@@ -173,13 +175,15 @@ export const Navigation = () => {
               ) : (
                 <div className="flex items-center text-sm font-medium">
                   <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
-                  <a 
-                    href="tel:0483914477" 
-                    className="hover:text-secondary transition-colors underline"
-                    onClick={handlePhoneClick}
-                  >
-                    To test My Agent Swiftly please call 0483 914 477
-                  </a>
+                  <span>
+                    To test My Agent Swiftly please call <a 
+                      href="tel:0483914477" 
+                      className="hover:text-secondary transition-colors underline"
+                      onClick={handlePhoneClick}
+                    >
+                      0483 914 477
+                    </a>
+                  </span>
                 </div>
               )}
             </div>

@@ -58,13 +58,15 @@ const Index = () => {
                 ) : (
                   <div className="flex items-center justify-center md:justify-start">
                     <Phone className="h-5 w-5 mr-2 text-secondary" />
-                    <a 
-                      href="tel:0483914477" 
-                      className="text-lg hover:text-secondary transition-colors underline"
-                      onClick={handlePhoneClick}
-                    >
-                      To test My Agent Swiftly please call 0483 914 477
-                    </a>
+                    <span className="text-lg">
+                      To test My Agent Swiftly please call <a 
+                        href="tel:0483914477" 
+                        className="text-lg hover:text-secondary transition-colors underline"
+                        onClick={handlePhoneClick}
+                      >
+                        0483 914 477
+                      </a>
+                    </span>
                   </div>
                 )}
               </div>
