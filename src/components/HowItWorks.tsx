@@ -142,7 +142,7 @@ export const HowItWorks = () => {
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '140px'
+                  height: '180px' // Increased from 140px to 180px
                 }}>
                   {/* Center-aligned vertical line connecting steps */}
                   <div className="absolute left-1/2 -translate-x-1/2">
@@ -150,8 +150,8 @@ export const HowItWorks = () => {
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '40px',
-                        top: '80px'
+                        height: '60px', // Increased from 40px to 60px
+                        top: '100px' // Increased from 80px to 100px
                       }}
                     />
                     {/* Arrow icon */}
@@ -159,7 +159,7 @@ export const HowItWorks = () => {
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: '115px'
+                        top: '155px' // Adjusted from 115px to 155px
                       }}
                     >
                       <Send className="w-5 h-5 text-secondary rotate-90" />
@@ -168,8 +168,8 @@ export const HowItWorks = () => {
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '40px',
-                        top: '130px'
+                        height: '25px', // Reduced from 40px to 25px
+                        top: '170px' // Adjusted from 130px to 170px
                       }}
                     />
                   </div>
