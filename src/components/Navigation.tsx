@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Send, Phone, Menu } from "lucide-react";
-import { EnquiryForm } from "./EnquiryForm";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +47,9 @@ export const Navigation = () => {
             <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">
               Pricing
             </a>
+            <a href="#contact" className="text-sm font-medium hover:text-secondary transition-colors">
+              Contact
+            </a>
             <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">
               About Us
             </a>
@@ -56,12 +58,7 @@ export const Navigation = () => {
                 Login
               </Button>
             </a>
-            {!showPhoneNumber ? (
-              <EnquiryForm 
-                triggerText="Get in Touch" 
-                buttonVariant="secondary"
-              />
-            ) : (
+            {showPhoneNumber && (
               <div className="flex items-center text-sm font-medium">
                 <Phone className="h-4 w-4 mr-2 text-secondary" />
                 <span>To test My Agent Swiftly please call 0483 914 477</span>
@@ -106,6 +103,13 @@ export const Navigation = () => {
               Pricing
             </a>
             <a 
+              href="#contact" 
+              className="text-sm font-medium hover:text-secondary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
+            </a>
+            <a 
               href="#about" 
               className="text-sm font-medium hover:text-secondary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
@@ -123,20 +127,12 @@ export const Navigation = () => {
                 Login
               </Button>
             </a>
-            <div className="py-2">
-              {!showPhoneNumber ? (
-                <EnquiryForm 
-                  triggerText="Get in Touch" 
-                  buttonVariant="secondary"
-                  buttonClassName="w-full"
-                />
-              ) : (
-                <div className="flex items-center text-sm font-medium">
-                  <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
-                  <span>To test My Agent Swiftly please call 0483 914 477</span>
-                </div>
-              )}
-            </div>
+            {showPhoneNumber && (
+              <div className="flex items-center text-sm font-medium py-2">
+                <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
+                <span>To test My Agent Swiftly please call 0483 914 477</span>
+              </div>
+            )}
           </div>
         </div>
       </div>
