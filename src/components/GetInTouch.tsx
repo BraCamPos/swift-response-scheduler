@@ -1,9 +1,11 @@
+
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const GetInTouch = () => {
   const handleEmailClick = () => {
-    window.location.href = "mailto:bradley@myagentswiftly.com.au";
+    const subject = encodeURIComponent("I'd like to know more about using My Agent Swiftly");
+    window.location.href = `mailto:bradley@myagentswiftly.com.au?subject=${subject}`;
   };
 
   const handleTextClick = () => {
