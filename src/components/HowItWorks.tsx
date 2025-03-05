@@ -1,5 +1,6 @@
 
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send } from "lucide-react";
+import { EnquiryForm } from "./EnquiryForm";
 
 export const HowItWorks = () => {
   const steps = [
@@ -112,6 +113,15 @@ export const HowItWorks = () => {
               )}
             </div>
           ))}
+        </div>
+        
+        {/* Get In Touch Button */}
+        <div className="flex justify-center mt-16 animate-fade-up" style={{ animationDelay: "500ms" }}>
+          <EnquiryForm 
+            triggerText="Get In Touch" 
+            buttonVariant="secondary" 
+            buttonClassName="text-base px-8 py-3 text-lg"
+          />
         </div>
       </div>
     </section>
