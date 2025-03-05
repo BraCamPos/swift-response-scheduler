@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Send, Phone, Menu } from "lucide-react";
-import { EnquiryForm } from "./EnquiryForm";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -57,10 +56,11 @@ export const Navigation = () => {
               </Button>
             </a>
             {!showPhoneNumber ? (
-              <EnquiryForm 
-                triggerText="Get in Touch" 
-                buttonVariant="secondary"
-              />
+              <a href="#contact">
+                <Button variant="secondary">
+                  Get In Touch
+                </Button>
+              </a>
             ) : (
               <div className="flex items-center text-sm font-medium">
                 <Phone className="h-4 w-4 mr-2 text-secondary" />
@@ -125,11 +125,11 @@ export const Navigation = () => {
             </a>
             <div className="py-2">
               {!showPhoneNumber ? (
-                <EnquiryForm 
-                  triggerText="Get in Touch" 
-                  buttonVariant="secondary"
-                  buttonClassName="w-full"
-                />
+                <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                  <Button variant="secondary" className="w-full">
+                    Get In Touch
+                  </Button>
+                </a>
               ) : (
                 <div className="flex items-center text-sm font-medium">
                   <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />

@@ -1,6 +1,6 @@
 
 import { Check } from "lucide-react";
-import { EnquiryForm } from "./EnquiryForm";
+import { Button } from "@/components/ui/button";
 
 export const Pricing = () => {
   const plans = [
@@ -59,10 +59,14 @@ export const Pricing = () => {
               </div>
               <div className="mt-auto">
                 <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
-                <EnquiryForm 
-                  triggerText="Enquire Now" 
-                  buttonClassName="w-full"
-                />
+                <a href="#contact">
+                  <Button 
+                    variant="secondary" 
+                    className="w-full"
+                  >
+                    Enquire Now
+                  </Button>
+                </a>
               </div>
             </div>
           ))}
