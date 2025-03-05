@@ -1,4 +1,3 @@
-
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send } from "lucide-react";
 import { EnquiryForm } from "./EnquiryForm";
 
@@ -26,7 +25,7 @@ export const HowItWorks = () => {
     },
     {
       icon: Smartphone,
-      title: "App",
+      title: "User-Friendly App",
       description: "Keep track of all your interactions with clients via our desktop and mobile app."
     }
   ];
