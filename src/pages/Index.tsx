@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
+import { GetInTouch } from "@/components/GetInTouch";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
 import { Send, Phone } from "lucide-react";
@@ -70,6 +70,7 @@ const Index = () => {
       <Features />
       <HowItWorks />
       <Pricing />
+      <GetInTouch />
 
       {/* About Us Section */}
       <section id="about" className="py-20 bg-white">
