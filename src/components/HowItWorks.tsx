@@ -142,26 +142,36 @@ export const HowItWorks = () => {
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '100px'
+                  height: '140px'
                 }}>
-                  {/* Simplified vertical line connecting steps */}
-                  <div 
-                    className="absolute border-l-2 border-dashed border-secondary/30"
-                    style={{
-                      height: '100px',
-                      left: '20px',
-                      top: '50px'
-                    }}
-                  />
-                  {/* Small arrow icon */}
-                  <div 
-                    className="absolute z-10 bg-white p-1"
-                    style={{
-                      left: '12px',
-                      top: '95px'
-                    }}
-                  >
-                    <Send className="w-5 h-5 text-secondary rotate-90" />
+                  {/* Center-aligned vertical line connecting steps */}
+                  <div className="absolute left-1/2 -translate-x-1/2">
+                    {/* Vertical line down from current paragraph */}
+                    <div 
+                      className="absolute border-l-2 border-dashed border-secondary/30"
+                      style={{
+                        height: '40px',
+                        top: '80px'
+                      }}
+                    />
+                    {/* Arrow icon */}
+                    <div 
+                      className="absolute z-10 bg-white p-1"
+                      style={{
+                        left: '-12px',
+                        top: '115px'
+                      }}
+                    >
+                      <Send className="w-5 h-5 text-secondary rotate-90" />
+                    </div>
+                    {/* Vertical line to next paragraph */}
+                    <div 
+                      className="absolute border-l-2 border-dashed border-secondary/30"
+                      style={{
+                        height: '40px',
+                        top: '130px'
+                      }}
+                    />
                   </div>
                 </div>
               )}
