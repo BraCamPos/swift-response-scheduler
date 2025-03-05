@@ -6,7 +6,7 @@ export const Pricing = () => {
   const plans = [
     {
       name: "MySwiftly",
-      price: "$127",
+      price: "$147",
       period: "/agent /month",
       features: [
         "Automated missed call responses",
@@ -19,7 +19,7 @@ export const Pricing = () => {
     },
     {
       name: "MySwiftly Plus",
-      price: "$187",
+      price: "$227",
       period: "/agent /month",
       features: [
         "Everything in MySwiftly, plus",
