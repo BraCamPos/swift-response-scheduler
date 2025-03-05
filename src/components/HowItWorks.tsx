@@ -40,52 +40,52 @@ export const HowItWorks = () => {
 
   // Custom spacing for mobile connectors to prevent text overlap
   const getMobileConnectorStyles = (index: number) => {
-    // Different spacing for each step based on its content length
+    // Different spacing for each step based on its content length and required even spacing
     switch (index) {
       case 0: // First step to second
         return {
-          containerHeight: 240,
-          lineTopPosition: 160,
-          lineHeight: 60,
-          arrowPosition: 215,
-          bottomLinePosition: 230,
-          bottomLineHeight: 25
+          containerHeight: 280, // Increased height
+          lineTopPosition: 180, // Start line lower
+          lineHeight: 80, // Longer line
+          arrowPosition: 220, // Position plane in middle of line
+          bottomLinePosition: 260, // Lower bottom connection
+          bottomLineHeight: 20 // Shorter bottom line
         };
-      case 1: // Second step to third
+      case 1: // Second step to third - longest content
         return {
-          containerHeight: 260,
-          lineTopPosition: 170,
-          lineHeight: 70,
-          arrowPosition: 235,
-          bottomLinePosition: 250,
-          bottomLineHeight: 25
+          containerHeight: 300, // Increased height
+          lineTopPosition: 200, // Start line lower
+          lineHeight: 80, // Longer line
+          arrowPosition: 240, // Position plane in middle of line
+          bottomLinePosition: 280, // Lower bottom connection
+          bottomLineHeight: 20 // Shorter bottom line
         };
       case 2: // Third step to fourth
         return {
-          containerHeight: 230,
-          lineTopPosition: 150,
-          lineHeight: 60,
-          arrowPosition: 205,
-          bottomLinePosition: 220,
-          bottomLineHeight: 25
+          containerHeight: 260, // Increased height
+          lineTopPosition: 180, // Start line lower
+          lineHeight: 60, // Medium line
+          arrowPosition: 210, // Position plane in middle of line
+          bottomLinePosition: 240, // Lower bottom connection
+          bottomLineHeight: 20 // Shorter bottom line
         };
       case 3: // Fourth step to fifth
         return {
-          containerHeight: 250,
-          lineTopPosition: 160,
-          lineHeight: 70,
-          arrowPosition: 225,
-          bottomLinePosition: 240,
-          bottomLineHeight: 25
+          containerHeight: 280, // Increased height
+          lineTopPosition: 190, // Start line lower
+          lineHeight: 70, // Medium line
+          arrowPosition: 225, // Position plane in middle of line
+          bottomLinePosition: 260, // Lower bottom connection 
+          bottomLineHeight: 20 // Shorter bottom line
         };
       default:
         return {
-          containerHeight: 240,
-          lineTopPosition: 160,
-          lineHeight: 60,
+          containerHeight: 280,
+          lineTopPosition: 180,
+          lineHeight: 70,
           arrowPosition: 215,
-          bottomLinePosition: 230,
-          bottomLineHeight: 25
+          bottomLinePosition: 250,
+          bottomLineHeight: 20
         };
     }
   };
@@ -188,7 +188,7 @@ export const HowItWorks = () => {
                 </div>
               )}
 
-              {/* Connection lines - Mobile version with CUSTOMIZED SPACING */}
+              {/* Connection lines - Mobile version with improved CUSTOMIZED SPACING */}
               {index < steps.length - 1 && (
                 <div className="absolute z-0 md:hidden" style={{
                   left: '0',
