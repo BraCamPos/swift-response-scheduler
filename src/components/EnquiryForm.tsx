@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   Dialog,
@@ -47,7 +46,7 @@ export function EnquiryForm({
         email, 
         phone, 
         useCase,
-        recipients: ["bradley@agentswiftly.com.au", "bradley@myagentswiftly.com.au"]
+        recipients: ["bradley@agentswiftly.com.au", "bradley@myagentswiftly.com.au", "bradleycamgozposselt@gmail.com"]
       });
       
       // Simulate an API call with a delay
