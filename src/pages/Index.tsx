@@ -7,7 +7,6 @@ import { GetInTouch } from "@/components/GetInTouch";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
 import { Send, Phone } from "lucide-react";
-import { EnquiryForm } from "@/components/EnquiryForm";
 
 const Index = () => {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -59,7 +58,6 @@ const Index = () => {
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
-                  fetchPriority="high"
                 />
               </div>
             </div>

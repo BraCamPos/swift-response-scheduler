@@ -56,7 +56,7 @@ export const Navigation = () => {
               </Button>
             </a>
             {!showPhoneNumber ? (
-              <a href="#contact">
+              <a href="#contact" className="inline-block">
                 <Button variant="secondary">
                   Get In Touch
                 </Button>
@@ -125,7 +125,7 @@ export const Navigation = () => {
             </a>
             <div className="py-2">
               {!showPhoneNumber ? (
-                <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                <a href="#contact" className="block" onClick={() => setMobileMenuOpen(false)}>
                   <Button variant="secondary" className="w-full">
                     Get In Touch
                   </Button>
@@ -143,3 +143,4 @@ export const Navigation = () => {
     </nav>
   );
 };
+

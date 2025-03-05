@@ -59,7 +59,7 @@ export const Pricing = () => {
               </div>
               <div className="mt-auto">
                 <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
-                <a href="#contact">
+                <a href="#contact" className="block">
                   <Button 
                     variant="secondary" 
                     className="w-full"
@@ -75,3 +75,4 @@ export const Pricing = () => {
     </section>
   );
 };
+

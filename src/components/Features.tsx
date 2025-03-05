@@ -48,7 +48,7 @@ export const Features = () => {
         
         {/* Get In Touch Button */}
         <div className="flex justify-center mt-12 animate-fade-up" style={{ animationDelay: "500ms" }}>
-          <a href="#contact">
+          <a href="#contact" className="inline-block">
             <Button 
               variant="secondary" 
               className="text-base px-8 py-3 text-lg"
@@ -61,3 +61,4 @@ export const Features = () => {
     </section>
   );
 };
+
