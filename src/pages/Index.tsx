@@ -101,11 +101,6 @@ const Index = () => {
                     hello@myagentswiftly.com.au
                   </a>
                 </p>
-                <p className="text-gray-600 mt-2">
-                  <a href="mailto:bradley@myagentswiftly.com.au" className="hover:text-secondary transition-colors">
-                    bradley@myagentswiftly.com.au
-                  </a>
-                </p>
               </div>
               
               <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm">

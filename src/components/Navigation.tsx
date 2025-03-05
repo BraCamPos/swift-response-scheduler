@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Send, Phone, Menu } from "lucide-react";
+import { Send, Phone, Menu, Mail } from "lucide-react";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -56,6 +56,12 @@ export const Navigation = () => {
             <a href="https://app.agentswiftly.com.au" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="hover:text-secondary">
                 Login
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button variant="secondary" className="flex items-center">
+                <Mail className="h-4 w-4 mr-2" />
+                Get In Touch
               </Button>
             </a>
             {showPhoneNumber && (
@@ -125,6 +131,16 @@ export const Navigation = () => {
             >
               <Button variant="outline" className="w-full hover:text-secondary">
                 Login
+              </Button>
+            </a>
+            <a 
+              href="#contact"
+              className="py-2" 
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Button variant="secondary" className="w-full flex items-center justify-center">
+                <Mail className="h-4 w-4 mr-2" />
+                Get In Touch
               </Button>
             </a>
             {showPhoneNumber && (
