@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
@@ -20,9 +19,6 @@ export const Footer = () => {
               </li>
               <li>
                 <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-white transition-colors">Contact</a>
               </li>
               <li>
                 <a href="#about" className="hover:text-white transition-colors">About Us</a>

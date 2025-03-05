@@ -1,6 +1,8 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Send, Phone, Menu } from "lucide-react";
+import { EnquiryForm } from "./EnquiryForm";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -54,12 +56,12 @@ export const Navigation = () => {
                 Login
               </Button>
             </a>
-            <a href="#contact">
-              <Button variant="secondary" className="flex items-center">
-                Get In Touch
-              </Button>
-            </a>
-            {showPhoneNumber && (
+            {!showPhoneNumber ? (
+              <EnquiryForm 
+                triggerText="Get in Touch" 
+                buttonVariant="secondary"
+              />
+            ) : (
               <div className="flex items-center text-sm font-medium">
                 <Phone className="h-4 w-4 mr-2 text-secondary" />
                 <span>To test My Agent Swiftly please call 0483 914 477</span>
@@ -121,21 +123,20 @@ export const Navigation = () => {
                 Login
               </Button>
             </a>
-            <a 
-              href="#contact"
-              className="py-2" 
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <Button variant="secondary" className="w-full flex items-center justify-center">
-                Get In Touch
-              </Button>
-            </a>
-            {showPhoneNumber && (
-              <div className="flex items-center text-sm font-medium py-2">
-                <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
-                <span>To test My Agent Swiftly please call 0483 914 477</span>
-              </div>
-            )}
+            <div className="py-2">
+              {!showPhoneNumber ? (
+                <EnquiryForm 
+                  triggerText="Get in Touch" 
+                  buttonVariant="secondary"
+                  buttonClassName="w-full"
+                />
+              ) : (
+                <div className="flex items-center text-sm font-medium">
+                  <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
+                  <span>To test My Agent Swiftly please call 0483 914 477</span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

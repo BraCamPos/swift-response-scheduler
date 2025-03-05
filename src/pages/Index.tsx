@@ -6,7 +6,8 @@ import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
-import { Send, Phone, MapPin } from "lucide-react";
+import { Send, Phone } from "lucide-react";
+import { EnquiryForm } from "@/components/EnquiryForm";
 
 const Index = () => {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -70,54 +71,8 @@ const Index = () => {
       <HowItWorks />
       <Pricing />
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
-            Get In Touch
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm">
-                <Phone className="h-10 w-10 text-secondary mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-                <p className="text-gray-600">
-                  <a href="tel:+61422331071" className="hover:text-secondary transition-colors">
-                    0422 331 071
-                  </a>
-                </p>
-                <p className="text-gray-600 mt-2">
-                  <a href="tel:+61483914477" className="hover:text-secondary transition-colors">
-                    0483 914 477
-                  </a>
-                  <span className="text-sm block mt-1">(Test My Agent Swiftly)</span>
-                </p>
-              </div>
-              
-              <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-                <p className="text-gray-600">
-                  <a href="mailto:hello@myagentswiftly.com.au" className="hover:text-secondary transition-colors">
-                    hello@myagentswiftly.com.au
-                  </a>
-                </p>
-              </div>
-              
-              <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm">
-                <MapPin className="h-10 w-10 text-secondary mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
-                <p className="text-gray-600">
-                  700 Swanston St,<br />
-                  Carlton VIC 3053
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Us Section */}
-      <section id="about" className="py-20 bg-gray-100">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
             About Us
