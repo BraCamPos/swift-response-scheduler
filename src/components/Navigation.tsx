@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Send, Phone, Menu, Mail } from "lucide-react";
+import { Send, Phone, Menu } from "lucide-react";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -47,9 +46,6 @@ export const Navigation = () => {
             <a href="#pricing" className="text-sm font-medium hover:text-secondary transition-colors">
               Pricing
             </a>
-            <a href="#contact" className="text-sm font-medium hover:text-secondary transition-colors">
-              Contact
-            </a>
             <a href="#about" className="text-sm font-medium hover:text-secondary transition-colors">
               About Us
             </a>
@@ -60,7 +56,6 @@ export const Navigation = () => {
             </a>
             <a href="#contact">
               <Button variant="secondary" className="flex items-center">
-                <Mail className="h-4 w-4 mr-2" />
                 Get In Touch
               </Button>
             </a>
@@ -109,13 +104,6 @@ export const Navigation = () => {
               Pricing
             </a>
             <a 
-              href="#contact" 
-              className="text-sm font-medium hover:text-secondary transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </a>
-            <a 
               href="#about" 
               className="text-sm font-medium hover:text-secondary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
@@ -139,7 +127,6 @@ export const Navigation = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <Button variant="secondary" className="w-full flex items-center justify-center">
-                <Mail className="h-4 w-4 mr-2" />
                 Get In Touch
               </Button>
             </a>

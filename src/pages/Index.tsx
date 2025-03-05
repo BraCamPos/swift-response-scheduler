@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -5,7 +6,7 @@ import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
-import { Send, Phone, Mail, MapPin } from "lucide-react";
+import { Send, Phone, MapPin } from "lucide-react";
 
 const Index = () => {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -94,7 +95,6 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm">
-                <Mail className="h-10 w-10 text-secondary mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Email Us</h3>
                 <p className="text-gray-600">
                   <a href="mailto:hello@myagentswiftly.com.au" className="hover:text-secondary transition-colors">
