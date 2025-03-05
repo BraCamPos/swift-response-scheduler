@@ -1,3 +1,4 @@
+
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -49,7 +50,7 @@ export const GetInTouch = () => {
                 <MapPin className="h-5 w-5 text-secondary mr-3 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Address</h3>
-                  <p className="text-gray-700">123 Real Estate Avenue<br />Sydney, NSW 2000</p>
+                  <p className="text-gray-700">700 Swanston St<br />Carlton VIC 3053</p>
                 </div>
               </div>
             </div>
