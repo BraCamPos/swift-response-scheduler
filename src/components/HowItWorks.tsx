@@ -136,30 +136,30 @@ export const HowItWorks = () => {
                 </div>
               )}
 
-              {/* Connection lines - Mobile version */}
+              {/* Connection lines - Mobile version - ADJUSTED FOR BETTER SPACING */}
               {index < steps.length - 1 && (
                 <div className="absolute z-0 md:hidden" style={{
                   left: '0',
                   top: '0',
                   width: '100%',
-                  height: '180px' // Increased from 140px to 180px
+                  height: '220px' // Increased height to provide more space
                 }}>
                   {/* Center-aligned vertical line connecting steps */}
                   <div className="absolute left-1/2 -translate-x-1/2">
-                    {/* Vertical line down from current paragraph */}
+                    {/* Vertical line down from current paragraph - starts lower */}
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '60px', // Increased from 40px to 60px
-                        top: '100px' // Increased from 80px to 100px
+                        height: '60px',
+                        top: '140px' // Increased to push the line further down
                       }}
                     />
-                    {/* Arrow icon */}
+                    {/* Arrow icon - moved down */}
                     <div 
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: '155px' // Adjusted from 115px to 155px
+                        top: '195px' // Adjusted to move the arrow icon further down
                       }}
                     >
                       <Send className="w-5 h-5 text-secondary rotate-90" />
@@ -168,8 +168,8 @@ export const HowItWorks = () => {
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
                       style={{
-                        height: '25px', // Reduced from 40px to 25px
-                        top: '170px' // Adjusted from 130px to 170px
+                        height: '25px',
+                        top: '210px' // Adjusted to connect properly with the next step
                       }}
                     />
                   </div>
