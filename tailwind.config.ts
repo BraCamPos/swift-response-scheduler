@@ -30,7 +30,7 @@ export default {
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#0066cc",
+          DEFAULT: "#55C7C7", // Changed to match teal from logo
           foreground: "#ffffff",
         },
         destructive: {
