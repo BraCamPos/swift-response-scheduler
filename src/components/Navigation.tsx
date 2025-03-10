@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Phone, Menu } from "lucide-react";
@@ -50,11 +49,13 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/cf0a82bb-5e3b-48a2-8242-19c0f9d32ec4.jpeg" 
-              alt="My Agent Swiftly Logo" 
-              className="h-8 w-auto"
-            />
+            <div className="h-8 w-auto">
+              <img 
+                src="/lovable-uploads/cf0a82bb-5e3b-48a2-8242-19c0f9d32ec4.jpeg" 
+                alt="My Agent Swiftly Logo" 
+                className="h-full w-auto object-contain"
+              />
+            </div>
             <span className="font-playfair text-xl font-semibold">My Agent Swiftly</span>
           </a>
           

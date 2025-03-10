@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -37,11 +36,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block animate-fade-in">
+              <div className="inline-block animate-fade-in h-12 w-auto">
                 <img 
                   src="/lovable-uploads/cf0a82bb-5e3b-48a2-8242-19c0f9d32ec4.jpeg" 
                   alt="My Agent Swiftly Logo" 
-                  className="h-12 w-auto mx-auto md:mx-0 mb-4"
+                  className="h-full w-auto object-contain mx-auto md:mx-0 mb-4"
                 />
               </div>
               <h1 className="text-3xl md:text-5xl font-playfair font-semibold mb-4 animate-fade-up">
