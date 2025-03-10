@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Send, Phone, Menu } from "lucide-react";
+import { Phone, Menu } from "lucide-react";
 
 export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +50,11 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center space-x-2">
-            <Send className="h-8 w-8 text-secondary" />
+            <img 
+              src="/lovable-uploads/cf0a82bb-5e3b-48a2-8242-19c0f9d32ec4.jpeg" 
+              alt="My Agent Swiftly Logo" 
+              className="h-8 w-auto"
+            />
             <span className="font-playfair text-xl font-semibold">My Agent Swiftly</span>
           </a>
           

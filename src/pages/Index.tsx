@@ -7,7 +7,7 @@ import { Pricing } from "@/components/Pricing";
 import { GetInTouch } from "@/components/GetInTouch";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Footer } from "@/components/Footer";
-import { Send, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const Index = () => {
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
@@ -38,7 +38,11 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-center md:text-left">
               <div className="inline-block animate-fade-in">
-                <Send className="h-12 w-12 text-secondary mx-auto md:mx-0 mb-4" />
+                <img 
+                  src="/lovable-uploads/cf0a82bb-5e3b-48a2-8242-19c0f9d32ec4.jpeg" 
+                  alt="My Agent Swiftly Logo" 
+                  className="h-12 w-auto mx-auto md:mx-0 mb-4"
+                />
               </div>
               <h1 className="text-3xl md:text-5xl font-playfair font-semibold mb-4 animate-fade-up">
                 Never Miss a Client Again
