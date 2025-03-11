@@ -10,11 +10,11 @@ export const GetInTouch = () => {
 
   const handleTextClick = () => {
     // Open SMS app with just the phone number, without any prefilled text
-    window.location.href = `sms:0483914477`;
+    window.location.href = `sms:0422331071`;
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:0483914477";
+    window.location.href = "tel:0422331071";
   };
 
   return (
@@ -31,8 +31,8 @@ export const GetInTouch = () => {
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-gray-700">
-                    <a href="tel:0483914477" className="hover:text-secondary transition-colors underline" onClick={handlePhoneClick}>
-                      0483 914 477
+                    <a href="tel:0422331071" className="hover:text-secondary transition-colors underline" onClick={handlePhoneClick}>
+                      0422 331 071
                     </a>
                   </p>
                 </div>
