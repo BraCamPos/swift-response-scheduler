@@ -107,18 +107,8 @@ export const HowItWorks = () => {
   };
 
   const getMobileLogoRotation = (index: number) => {
-    switch (index) {
-      case 0: // First logo - 90 degrees right
-        return "rotate(90deg)";
-      case 1: // Second logo - 90 degrees left
-        return "rotate(-90deg)";
-      case 2: // Third logo - 90 degrees right
-        return "rotate(90deg)";
-      case 3: // Fourth logo - 90 degrees right
-        return "rotate(90deg)";
-      default:
-        return "rotate(0deg)";
-    }
+    // Update all mobile logos to rotate 180 degrees (point downward)
+    return "rotate(180deg)";
   };
 
   return (
