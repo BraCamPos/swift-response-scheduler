@@ -204,7 +204,7 @@ export const HowItWorks = () => {
                     <img 
                       src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                       alt="My Agent Swiftly Logo" 
-                      className="w-6 h-11 text-secondary"
+                      className="w-6 h-6 text-secondary"
                       style={{ transform: getDesktopLogoRotation(index) }}
                     />
                   </div>
@@ -244,7 +244,7 @@ export const HowItWorks = () => {
                       <img 
                         src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                         alt="My Agent Swiftly Logo" 
-                        className="w-5 h-10 text-secondary"
+                        className="w-5 h-5 text-secondary"
                         style={{ transform: getMobileLogoRotation(index) }}
                       />
                     </div>
