@@ -231,14 +231,14 @@ export const HowItWorks = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        width: '28px',
-                        height: '28px'
+                        width: '34px',  // Increased by 20% from 28px
+                        height: '34px'  // Increased by 20% from 28px
                       }}
                     >
                       <img 
                         src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                         alt="My Agent Swiftly Logo" 
-                        className="w-7 h-7"
+                        className="w-8 h-8"  // Increased by ~20% from w-7 h-7
                         style={{ transform: getMobileLogoRotation(index) }}
                       />
                     </div>
