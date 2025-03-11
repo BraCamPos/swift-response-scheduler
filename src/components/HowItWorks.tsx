@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -91,6 +92,38 @@ export const HowItWorks = () => {
     }
   };
 
+  // Function to get logo rotation for desktop view
+  const getDesktopLogoRotation = (index: number) => {
+    switch (index) {
+      case 0: // First logo - 90 degrees right
+        return "rotate(90deg)";
+      case 1: // Second logo - 90 degrees left
+        return "rotate(-90deg)";
+      case 2: // Third logo - 90 degrees right
+        return "rotate(90deg)";
+      case 3: // Fourth logo - 90 degrees right
+        return "rotate(90deg)";
+      default:
+        return "rotate(0deg)";
+    }
+  };
+
+  // Function to get logo rotation for mobile view
+  const getMobileLogoRotation = (index: number) => {
+    switch (index) {
+      case 0: // First logo - 90 degrees right
+        return "rotate(90deg)";
+      case 1: // Second logo - 90 degrees left
+        return "rotate(-90deg)";
+      case 2: // Third logo - 90 degrees right
+        return "rotate(90deg)";
+      case 3: // Fourth logo - 90 degrees right
+        return "rotate(90deg)";
+      default:
+        return "rotate(0deg)";
+    }
+  };
+
   return (
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -172,6 +205,7 @@ export const HowItWorks = () => {
                       src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                       alt="My Agent Swiftly Logo" 
                       className="w-6 h-6 text-secondary"
+                      style={{ transform: getDesktopLogoRotation(index) }}
                     />
                   </div>
                   <div 
@@ -211,6 +245,7 @@ export const HowItWorks = () => {
                         src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                         alt="My Agent Swiftly Logo" 
                         className="w-5 h-5 text-secondary"
+                        style={{ transform: getMobileLogoRotation(index) }}
                       />
                     </div>
                     <div 
