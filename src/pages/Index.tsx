@@ -80,7 +80,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/61a987fd-d3c4-4981-9cce-e39432bd193c.png" 
                   alt="Professional real estate agent woman in a light grey suit holding a folder" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-contain"
                   loading="eager"
                   decoding="async"
                 />
