@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -195,11 +196,11 @@ export const HowItWorks = () => {
                     className="absolute z-10 bg-white p-1"
                     style={{
                       left: '48%',
-                      top: '187px',
+                      top: '182px', // Updated: moved 5px up from 187px
                     }}
                   >
                     <img 
-                      src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
+                      src="/lovable-uploads/a0c88b74-6ff4-41c3-8573-5263c10edeea.png"
                       alt="My Agent Swiftly Logo" 
                       className="w-6 h-6 text-secondary"
                       style={{ transform: getDesktopLogoRotation(index) }}
@@ -235,11 +236,11 @@ export const HowItWorks = () => {
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: getMobileConnectorStyles(index).arrowPosition - 5
+                        top: getMobileConnectorStyles(index).arrowPosition - 10 // Updated: moved 5px up (original -5 now -10)
                       }}
                     >
                       <img 
-                        src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
+                        src="/lovable-uploads/a0c88b74-6ff4-41c3-8573-5263c10edeea.png"
                         alt="My Agent Swiftly Logo" 
                         className="w-5 h-5 text-secondary"
                         style={{ transform: getMobileLogoRotation(index) }}
