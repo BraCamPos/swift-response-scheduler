@@ -103,7 +103,7 @@ export const Navigation = () => {
                 <span>
                   To test My Agent Swiftly please call <a 
                     href="tel:0483914477" 
-                    className="hover:text-secondary transition-colors underline"
+                    className="hover:text-secondary transition-colors underline font-playfair"
                     onClick={handlePhoneClick}
                   >
                     0483 914 477
@@ -120,6 +120,7 @@ export const Navigation = () => {
               size="icon" 
               onClick={toggleMobileMenu}
               aria-label="Menu"
+              className="font-playfair"
             >
               <Menu className="h-6 w-6" />
             </Button>
@@ -180,10 +181,10 @@ export const Navigation = () => {
               ) : (
                 <div className="flex items-center text-sm font-medium font-playfair">
                   <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
-                  <span>
+                  <span className="font-playfair">
                     To test My Agent Swiftly please call <a 
                       href="tel:0483914477" 
-                      className="hover:text-secondary transition-colors underline"
+                      className="hover:text-secondary transition-colors underline font-playfair"
                       onClick={handlePhoneClick}
                     >
                       0483 914 477
