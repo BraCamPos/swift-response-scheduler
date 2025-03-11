@@ -225,7 +225,7 @@ export const HowItWorks = () => {
                     <div 
                       className="absolute z-10 bg-white"
                       style={{
-                        left: '-12px',
+                        left: '-2px', // Moved 10px to the right (from -12px to -2px)
                         top: getMobileConnectorStyles(index).arrowPosition - 10,
                         transform: 'translateX(-50%)',
                         padding: '4px',
