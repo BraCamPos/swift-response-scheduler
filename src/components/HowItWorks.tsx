@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -92,7 +91,6 @@ export const HowItWorks = () => {
     }
   };
 
-  // Function to get logo rotation for desktop view
   const getDesktopLogoRotation = (index: number) => {
     switch (index) {
       case 0: // First logo - 90 degrees right
@@ -108,7 +106,6 @@ export const HowItWorks = () => {
     }
   };
 
-  // Function to get logo rotation for mobile view
   const getMobileLogoRotation = (index: number) => {
     switch (index) {
       case 0: // First logo - 90 degrees right
@@ -198,7 +195,7 @@ export const HowItWorks = () => {
                     className="absolute z-10 bg-white p-1"
                     style={{
                       left: '48%',
-                      top: '192px',
+                      top: '187px',
                     }}
                   >
                     <img 
@@ -238,7 +235,7 @@ export const HowItWorks = () => {
                       className="absolute z-10 bg-white p-1"
                       style={{
                         left: '-12px',
-                        top: getMobileConnectorStyles(index).arrowPosition
+                        top: getMobileConnectorStyles(index).arrowPosition - 5
                       }}
                     >
                       <img 

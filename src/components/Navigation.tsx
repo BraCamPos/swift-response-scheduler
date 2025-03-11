@@ -82,7 +82,7 @@ export const Navigation = () => {
             >
               About Us
             </a>
-            <a href="https://app.agentswiftly.com.au" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.myagentswiftly.com.au/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="hover:text-secondary font-playfair">
                 Login
               </Button>
@@ -158,7 +158,7 @@ export const Navigation = () => {
               About Us
             </a>
             <a 
-              href="https://app.agentswiftly.com.au" 
+              href="https://app.myagentswiftly.com.au/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="py-2"
