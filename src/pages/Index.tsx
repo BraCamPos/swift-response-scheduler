@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -77,8 +78,8 @@ const Index = () => {
             <div className="hidden md:block animate-fade-in" style={{ animationDelay: "300ms" }}>
               <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
                 <img 
-                  src="/lovable-uploads/b3e50bdd-e87a-42be-9541-70256d37643a.png" 
-                  alt="Professional real estate agent woman in a light grey suit holding a folder" 
+                  src="/lovable-uploads/439262b0-e6a5-4808-802c-974d217a86ea.png" 
+                  alt="Professional real estate agent woman in a light grey suit holding a folder and talking on phone" 
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
