@@ -174,7 +174,7 @@ export const HowItWorks = () => {
                       src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
                       alt="My Agent Swiftly Logo" 
                       className="w-6 h-6 text-secondary"
-                      style={{ transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)` }}
+                      style={{ transform: `rotate(${index % 2 === 0 ? '90' : '-90'}deg)` }}
                     />
                   </div>
                   <div 
@@ -213,7 +213,8 @@ export const HowItWorks = () => {
                       <img 
                         src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
                         alt="My Agent Swiftly Logo" 
-                        className="w-5 h-5 text-secondary rotate-90"
+                        className="w-5 h-5 text-secondary"
+                        style={{ transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)` }}
                       />
                     </div>
                     <div 
