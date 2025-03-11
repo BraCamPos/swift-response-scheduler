@@ -36,9 +36,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-center md:text-left">
-              <div className="inline-block animate-fade-in h-12 w-auto">
+              <div className="inline-block animate-fade-in h-16 w-auto">
                 <img 
-                  src="/lovable-uploads/fabf53e3-b7bc-409e-848e-2de704015a1d.png" 
+                  src="/lovable-uploads/3363a4b1-a42e-4187-87ff-fdff555aca07.png" 
                   alt="My Agent Swiftly Logo" 
                   className="h-full w-auto object-contain mx-auto md:mx-0 mb-4"
                 />
