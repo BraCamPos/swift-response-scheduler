@@ -52,7 +52,7 @@ export const Navigation = () => {
           <a href="/" className="flex items-center">
             <div className="h-10 w-auto mt-2">
               <img 
-                src="/lovable-uploads/3363a4b1-a42e-4187-87ff-fdff555aca07.png" 
+                src="/lovable-uploads/8d667915-cd2f-4559-af7b-c06937805ab1.png" 
                 alt="My Agent Swiftly Logo" 
                 className="h-full w-auto object-contain"
               />
