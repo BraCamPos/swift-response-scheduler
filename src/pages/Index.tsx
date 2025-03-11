@@ -61,7 +61,7 @@ const Index = () => {
                   </Button>
                 ) : (
                   <div className="flex items-center justify-center md:justify-start">
-                    <Phone className="h-5 w-5 mr-2 text-secondary" />
+                    <Phone className="h-5 w-5 md:h-5 md:w-5 mr-2 text-secondary md:flex-shrink-0 sm:h-10 sm:w-10" />
                     <span className="text-lg">
                       To test My Agent Swiftly please call <a 
                         href="tel:0483914477" 

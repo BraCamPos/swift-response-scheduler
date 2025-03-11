@@ -180,7 +180,7 @@ export const Navigation = () => {
                 </a>
               ) : (
                 <div className="flex items-center text-sm font-medium font-playfair">
-                  <Phone className="h-4 w-4 mr-2 text-secondary flex-shrink-0" />
+                  <Phone className="h-8 w-8 mr-2 text-secondary flex-shrink-0" />
                   <span className="font-playfair">
                     To test My Agent Swiftly please call <a 
                       href="tel:0483914477" 
