@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -190,7 +191,7 @@ export const HowItWorks = () => {
                     <img 
                       src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                       alt="My Agent Swiftly Logo" 
-                      className="w-6 h-6 text-secondary"
+                      className="w-6 h-6"
                       style={{ transform: getDesktopLogoRotation(index) }}
                     />
                   </div>
@@ -230,6 +231,8 @@ export const HowItWorks = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
+                        width: '28px',
+                        height: '28px'
                       }}
                     >
                       <img 
