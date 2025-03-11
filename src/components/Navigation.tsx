@@ -48,9 +48,9 @@ export const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
-            <div className="h-10 w-auto mt-4">
+            <div className="h-10 w-auto mt-2">
               <img 
                 src="/lovable-uploads/3363a4b1-a42e-4187-87ff-fdff555aca07.png" 
                 alt="My Agent Swiftly Logo" 
