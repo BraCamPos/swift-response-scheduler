@@ -171,7 +171,7 @@ export const HowItWorks = () => {
                     }}
                   >
                     <img 
-                      src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
+                      src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                       alt="My Agent Swiftly Logo" 
                       className="w-6 h-6 text-secondary"
                       style={{ transform: `rotate(${index % 2 === 0 ? '90' : '-90'}deg)` }}
@@ -211,7 +211,7 @@ export const HowItWorks = () => {
                       }}
                     >
                       <img 
-                        src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
+                        src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                         alt="My Agent Swiftly Logo" 
                         className="w-5 h-5 text-secondary"
                         style={{ transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)` }}
