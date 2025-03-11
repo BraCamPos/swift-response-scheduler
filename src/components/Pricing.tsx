@@ -1,13 +1,18 @@
 
-import { Check } from "lucide-react";
+import { Check, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Switch } from "@/components/ui/switch";
 
 export const Pricing = () => {
+  const [isYearly, setIsYearly] = useState(false);
+
   const plans = [
     {
       name: "MySwiftly",
-      price: "$147",
-      period: "/agent /month",
+      monthlyPrice: "$147",
+      yearlyPrice: "$118",
+      period: "/agent",
       features: [
         "Automated missed call responses",
         "Automated text exchanges",
@@ -19,8 +24,9 @@ export const Pricing = () => {
     },
     {
       name: "MySwiftly Plus",
-      price: "$227",
-      period: "/agent /month",
+      monthlyPrice: "$227",
+      yearlyPrice: "$181",
+      period: "/agent",
       features: [
         "Everything in MySwiftly, plus",
         "Detailed SMS responses including links to listings and inspection times",
@@ -37,12 +43,32 @@ export const Pricing = () => {
     }
   };
 
+  const handleToggleChange = () => {
+    setIsYearly(!isYearly);
+  };
+
   return (
     <section id="pricing" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-12">
+        <h2 className="text-3xl md:text-4xl font-playfair text-center font-semibold mb-8">
           Simple, Transparent Pricing
         </h2>
+        
+        <div className="flex items-center justify-center mb-10">
+          <span className={`mr-3 ${!isYearly ? 'font-semibold text-secondary' : 'text-gray-600'}`}>Monthly</span>
+          <Switch 
+            checked={isYearly} 
+            onCheckedChange={handleToggleChange} 
+            className="data-[state=checked]:bg-secondary"
+          />
+          <span className={`ml-3 ${isYearly ? 'font-semibold text-secondary' : 'text-gray-600'}`}>Yearly</span>
+          {isYearly && (
+            <span className="ml-2 bg-secondary/20 text-secondary text-xs px-2 py-1 rounded-full">
+              Save more
+            </span>
+          )}
+        </div>
+        
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <div
@@ -53,8 +79,12 @@ export const Pricing = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
                 <div className="flex items-baseline mb-6">
-                  <span className="text-4xl font-bold">{plan.price}<sup>*</sup></span>
-                  <span className="text-gray-600 ml-1">{plan.period}</span>
+                  <span className="text-4xl font-bold">
+                    {isYearly ? plan.yearlyPrice : plan.monthlyPrice}<sup>*</sup>
+                  </span>
+                  <span className="text-gray-600 ml-1">
+                    {plan.period} {isYearly ? '/year' : '/month'}
+                  </span>
                 </div>
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, i) => (
@@ -66,7 +96,9 @@ export const Pricing = () => {
                 </ul>
               </div>
               <div className="mt-auto">
-                <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding network charges</p>
+                <p className="text-sm text-gray-500 italic mb-4">
+                  *min. three months excluding network charges{isYearly ? ', billed annually' : ''}
+                </p>
                 <a 
                   href="#contact" 
                   className="block"
