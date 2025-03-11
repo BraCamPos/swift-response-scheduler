@@ -78,8 +78,8 @@ const Index = () => {
             <div className="hidden md:block animate-fade-in" style={{ animationDelay: "300ms" }}>
               <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
                 <img 
-                  src="/lovable-uploads/9e49fe0a-69b6-4e9f-8918-223404f9884f.png" 
-                  alt="Professional real estate agent in a grey suit talking on phone while holding a folder" 
+                  src="/lovable-uploads/61a987fd-d3c4-4981-9cce-e39432bd193c.png" 
+                  alt="Professional real estate agent woman in a light grey suit holding a folder" 
                   className="w-full h-full object-cover"
                   loading="eager"
                   decoding="async"
