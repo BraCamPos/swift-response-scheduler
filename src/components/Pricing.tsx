@@ -66,7 +66,7 @@ export const Pricing = () => {
                 </ul>
               </div>
               <div className="mt-auto">
-                <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding SMS charges</p>
+                <p className="text-sm text-gray-500 italic mb-4">*min. three months excluding network charges</p>
                 <a 
                   href="#contact" 
                   className="block"
