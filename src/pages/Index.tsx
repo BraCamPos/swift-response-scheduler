@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -38,7 +39,7 @@ const Index = () => {
             <div className="text-center md:text-left">
               <div className="inline-block animate-fade-in h-16 w-auto">
                 <img 
-                  src="/lovable-uploads/3363a4b1-a42e-4187-87ff-fdff555aca07.png" 
+                  src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png" 
                   alt="My Agent Swiftly Logo" 
                   className="h-full w-auto object-contain mx-auto md:mx-0 mb-4"
                 />

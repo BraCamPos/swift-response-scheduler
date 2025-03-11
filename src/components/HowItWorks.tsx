@@ -1,5 +1,6 @@
+
 import { useState } from "react";
-import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Send, Phone } from "lucide-react";
+import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const HowItWorks = () => {
@@ -169,7 +170,12 @@ export const HowItWorks = () => {
                       transform: `rotate(${index % 2 === 0 ? '45' : '225'}deg)`
                     }}
                   >
-                    <Send className="w-6 h-6 text-secondary" />
+                    <img 
+                      src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
+                      alt="My Agent Swiftly Logo" 
+                      className="w-6 h-6 text-secondary"
+                      style={{ transform: `rotate(${index % 2 === 0 ? '0' : '180'}deg)` }}
+                    />
                   </div>
                   <div 
                     className="absolute border-l-2 border-dashed border-secondary/30"
@@ -204,7 +210,11 @@ export const HowItWorks = () => {
                         top: getMobileConnectorStyles(index).arrowPosition
                       }}
                     >
-                      <Send className="w-5 h-5 text-secondary rotate-90" />
+                      <img 
+                        src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png"
+                        alt="My Agent Swiftly Logo" 
+                        className="w-5 h-5 text-secondary rotate-90"
+                      />
                     </div>
                     <div 
                       className="absolute border-l-2 border-dashed border-secondary/30"
