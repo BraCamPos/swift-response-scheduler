@@ -54,7 +54,22 @@ export const Pricing = () => {
           Simple, Transparent Pricing
         </h2>
         
-        <div className="flex items-center justify-center mb-10">
+        {/* Toggle for desktop (hidden on mobile) */}
+        <div className="hidden md:flex items-center justify-center mb-10">
+          <span className={`mr-3 ${!isYearly ? 'font-semibold text-secondary' : 'text-gray-600'}`}>Monthly</span>
+          <Switch 
+            checked={isYearly} 
+            onCheckedChange={handleToggleChange} 
+            className="data-[state=checked]:bg-secondary"
+          />
+          <span className={`ml-3 ${isYearly ? 'font-semibold text-secondary' : 'text-gray-600'}`}>Yearly</span>
+          <span className="ml-2 bg-secondary/20 text-secondary text-xs px-2 py-1 rounded-full">
+            Save 20%
+          </span>
+        </div>
+        
+        {/* Toggle for mobile (above pricing cards) */}
+        <div className="flex md:hidden items-center justify-center mb-10">
           <span className={`mr-3 ${!isYearly ? 'font-semibold text-secondary' : 'text-gray-600'}`}>Monthly</span>
           <Switch 
             checked={isYearly} 
