@@ -96,7 +96,7 @@ export const Pricing = () => {
                 </ul>
               </div>
               <div className="mt-auto">
-                <p className="text-sm text-gray-500 italic mb-4">
+                <p className="text-xs text-gray-500 italic mb-4">
                   *min. three months excluding network charges{isYearly ? ', billed annually' : ''}
                 </p>
                 <a 
