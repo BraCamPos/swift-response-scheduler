@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { PhoneOff, MessageSquare, CalendarCheck, Star, Smartphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -222,16 +223,21 @@ export const HowItWorks = () => {
                       }}
                     />
                     <div 
-                      className="absolute z-10 bg-white p-1"
+                      className="absolute z-10 bg-white"
                       style={{
                         left: '-12px',
-                        top: getMobileConnectorStyles(index).arrowPosition - 5
+                        top: getMobileConnectorStyles(index).arrowPosition - 10,
+                        transform: 'translateX(-50%)',
+                        padding: '4px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        width: '24px'
                       }}
                     >
                       <img 
                         src="/lovable-uploads/3277a88e-601f-4ceb-9b1e-b878acac5f52.png"
                         alt="My Agent Swiftly Logo" 
-                        className="w-5 h-5 text-secondary"
+                        className="w-6 h-6"
                         style={{ transform: getMobileLogoRotation(index) }}
                       />
                     </div>
