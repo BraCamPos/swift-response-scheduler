@@ -39,7 +39,7 @@ const Index = () => {
             <div className="text-center md:text-left">
               <div className="inline-block animate-fade-in h-16 w-auto">
                 <img 
-                  src="/lovable-uploads/a0c88b74-6ff4-41c3-8573-5263c10edeea.png" 
+                  src="/lovable-uploads/fc5266ae-530a-4a5d-9d57-40147841d3e7.png" 
                   alt="My Agent Swiftly Logo" 
                   className="h-full w-auto object-contain mx-auto md:mx-0 mb-4"
                 />
