@@ -225,13 +225,15 @@ export const HowItWorks = () => {
                     <div 
                       className="absolute z-10 bg-white"
                       style={{
-                        left: '-2px', // Moved 10px to the right (from -12px to -2px)
+                        left: '2px', // Moved 4px to the right (from -2px to 2px)
                         top: getMobileConnectorStyles(index).arrowPosition - 10,
                         transform: 'translateX(-50%)',
                         padding: '4px',
                         display: 'flex',
                         justifyContent: 'center',
-                        width: '24px'
+                        alignItems: 'center', // Added to center image vertically
+                        width: '24px',
+                        height: '24px' // Added to maintain original aspect ratio
                       }}
                     >
                       <img 
