@@ -109,7 +109,7 @@ export const Pricing = () => {
             </div>
             <div className="mt-auto">
               <p className="text-xs text-gray-500 italic mb-4">
-                *min. three months excluding network charges{isYearly ? ', billed annually' : ''}
+                *min. three months excluding network charges and GST{isYearly ? ', billed annually' : ''}
               </p>
               <a 
                 href="#contact" 
@@ -168,7 +168,7 @@ export const Pricing = () => {
             </div>
             <div className="mt-auto">
               <p className="text-xs text-gray-500 italic mb-4">
-                *min. three months excluding network charges{isYearly ? ', billed annually' : ''}
+                *min. three months excluding network charges and GST{isYearly ? ', billed annually' : ''}
               </p>
               <a 
                 href="#contact" 
