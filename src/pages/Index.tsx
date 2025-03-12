@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -115,11 +114,8 @@ const Index = () => {
                 </div>
               </div>
               <div className="md:w-3/4">
-                <p className="text-gray-600 mb-6 text-center md:text-left">
-                  My Agent Swiftly is the brainchild of Bradley Camgoz Posselt, a passionate innovator in real estate technology. With years of experience in both real estate and technology sectors, we recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
-                </p>
                 <p className="text-gray-600 text-center md:text-left">
-                  My Agent Swiftly has grown to become a trusted partner for real estate professionals across Australia, helping them leverage cutting-edge AI technology to provide exceptional service while maintaining the personal touch that is so crucial in the real estate industry.
+                  My Agent Swiftly is the brainchild of Bradley Camgoz Posselt, a passionate innovator in real estate technology. With years of experience in both real estate and technology sectors, we recognized the critical need for a solution that would help agents maintain meaningful connections with their clients, even during their busiest moments.
                 </p>
               </div>
             </div>
