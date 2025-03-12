@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
@@ -103,7 +104,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
               <div className="md:w-1/4">
-                <div className="w-48 h-48 md:w-full md:h-auto aspect-square mx-auto rounded-full overflow-hidden shadow-md">
+                <div className="w-34 h-34 md:w-[70%] md:h-auto aspect-square mx-auto rounded-full overflow-hidden shadow-md">
                   <img 
                     src="/lovable-uploads/19c22431-2830-4911-9071-90dc60fdbb91.png"
                     alt="Professional profile photo in black and white"
